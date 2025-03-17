@@ -1,0 +1,6 @@
+Today, we started focusing on user management, covering key concepts like identification, authentication, and authorization. The majority if not all of the class finally got there virtual machines up and running, allowing us to put our knowledge into practice using the virtual machines.
+We began by learning about User IDs (UIDs) and Group IDs (GIDs), along with the difference between primary and secondary groups. A major focus was on two critical system files:
+	•	/etc/passwd – Stores user ID information
+	•	/etc/shadow – Stores encrypted passwords
+Interestingly, the names of these files can be misleading, so we made sure to clarify their actual purposes.
+To reinforce our learning, we practiced adding, deleting, and modifying users using system commands. This hands on experience made it clear how essential these skills are in the real world. Managing users isn’t just a theoretical concept, it’s something that professionals deal with regularly, making today’s lesson incredibly valuable.
