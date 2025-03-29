@@ -1,0 +1,33 @@
+Today, we started with firewalls, which act as a barrier between the internal (secure) and external (insecure) network, filtering traffic to prevent unauthorized access while allowing legitimate traffic through. We covered:
+	•	Access Control Lists (ACLs): Firewall rules that filter IP addresses, protocols, and destination ports.
+	•	Types of Firewalls:
+	•	Network-based Firewall – A combination of hardware and software for protection.
+	•	Standalone Firewall – Often built into routers, commonly used in SOHO (Small Office/Home Office) settings.
+	•	IP Forwarding: Routers forwarding packets between local and remote networks.
+	•	Netfilter: The core Linux firewall.
+	•	iptables: A pre-installed firewall application with a command-line interface (CLI).
+	•	Firewalld: A frontend controller for iptables, which we installed using:
+	•	Ubuntu: sudo apt install firewalld
+	•	CentOS: sudo dnf install firewalld-config
+
+We discussed firewall zones:
+	•	Internal (Intranet/Private)
+	•	Extranet (DMZ - buffer zone between public and private networks)
+	•	Internet (Public)
+
+Next, we explored Remote Administration Access - SSH (Secure Shell):
+	•	The primary remote administration tool in Linux.
+	•	Uses public/private key authentication for secure access.
+	•	Key concept: The private key is never shared, while the public key can be.
+	•	Command to generate key pair: ssh-keygen (which we struggled to get working).
+	•	Default port for SSH: 22.
+
+We moved on to vulnerability scanning with netcat, which tests connectivity and sends data across network connections. Netcat = port scanning.
+
+Key Takeaways:
+	•	Vulnerability scans are defensive, while penetration tests are offensive.
+	•	Nmap (CLI tool) & Zenmap (GUI equivalent): Used for network mapping, displaying ports, firewalls, vulnerabilities, and OS info.
+
+We ended the day attempting to install nmap, which was an interesting challenge.
+
+Some topics, like SSH keys and netcat, were tricky for me today, but I’ll do more research to simplify and fully understand them. Maybe an analogy will help me wrap my head around it!
