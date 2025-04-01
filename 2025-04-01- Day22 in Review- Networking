@@ -1,0 +1,62 @@
+Day 1 Networking Review
+
+Today was our first day diving into networking, and we started by building a strong foundation. Interestingly, a lot of that foundation consisted of Linux fundamentals with additional networking concepts layered in. The class session was well-structured, and Mr. Darrell led a solid lecture. It felt like the class as a whole let him take the lead, and there weren’t many outbursts—possibly because not everyone was in class today. This allowed us to focus and absorb the information more effectively.
+
+We also watched some YouTube videos that helped clarify key concepts, making it easier to understand the material.
+
+Key Topics Covered
+
+1️⃣ Peer-to-Peer vs. Client-Server Networks
+	•	Client-Server Network:
+	•	Centralized management, provisioning, and security.
+	•	Clients consume resources provided by servers.
+	•	Pros: Scalable, easy to support, centralized control, easy backups.
+	•	Cons: Expensive, requires advanced planning, costly server OS.
+	•	Peer-to-Peer Network:
+	•	Each host can share and access resources independently.
+	•	Pros: Easy to implement, cost-effective.
+	•	Cons: Hard to expand, lacks centralized control, security risks.
+
+2️⃣ Network Topologies
+
+We discussed various network topologies, each with different structures and use cases:
+	•	Point-to-Point: Direct connection between two nodes.
+	•	Bus: Devices connect via a trunk cable, and all messages are sent to all devices.
+	•	Ring: Devices form a closed loop where data moves in one direction.
+	•	Star: All devices connect to a central hub/switch, which transmits data.
+	•	Mesh: Each node connects to multiple others for redundancy (fault tolerance is key).
+	•	Hybrid: A mix of multiple topologies, making it complex but flexible.
+
+We also distinguished between:
+	•	Physical Topology (bird’s-eye view of cables/devices).
+	•	Logical Topology (how data actually moves through the network).
+
+3️⃣ OSI Model & Troubleshooting
+
+We reviewed the seven OSI layers:
+	1.	Physical
+	2.	Data Link
+	3.	Network
+	4.	Transport
+	5.	Session
+	6.	Presentation
+	7.	Application
+
+We also discussed encapsulation and decapsulation, reinforcing how data flows through these layers.
+
+Finally, we covered the troubleshooting methodology:
+	1.	Identify the problem.
+	2.	Establish a theory of probable cause.
+	3.	Test the theory.
+	4.	Establish a plan of action.
+	5.	Implement the solution.
+	6.	Verify the solution.
+	7.	Document everything.
+
+We wrapped up with Practice-Based Questions (PBQs) to prep for the Network+ exam, which really pushed us to think critically.
+
+Clark Atlanta Visit
+
+In the second half of the day, we went to Clark Atlanta for a lecture. Unfortunately, there was some miscommunication about registration, and it didn’t seem like they were prepared for us. Since the event was optional, I returned to school and worked on more PBQs, which were extremely helpful for understanding the types of questions we’ll face on the exam.
+
+Overall, today was a strong start. The structured learning environment helped us focus, and I feel like I’m starting to build a solid networking foundation. Looking forward to diving deeper!
