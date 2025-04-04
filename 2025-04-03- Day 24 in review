@@ -1,0 +1,13 @@
+Day Review Post: A Blur of Information
+
+Today was an absolute blur of information! Since we’ll be missing a week for spring break, our instructors decided to double up, cramming two days’ worth of material into one. It was definitely overwhelming, and I’ll need to go back and read through each slide individually to fully grasp everything.
+
+We covered network cables in depth—twisted pair, coaxial, and fiber optic. Twisted pair cables (RJ-45 and RJ-11) are either shielded (STP) or unshielded (UTP), with STP being more expensive. Coaxial cables are legacy cables with great EMI resistance but are rarely used in modern networking. Fiber optic cables use light for data transmission, with single-mode (SMF) for long distances and multi-mode (MMF) for shorter distances.
+
+We also discussed CAT cable standards (Cat 3, 5e, 6e, 7e, and 8e), their differences, and use cases. Then we covered Plenum vs. Riser-rated cables—Plenum runs across ceilings and is fire-resistant, while Riser cables run between floors and prevent fire spread.
+
+From there, we moved on to fiber optic connectors (ST, SC, and LC) and networking infrastructure, including horizontal and backbone cabling, MDF (Main Distribution Frame), IDF (Intermediate Distribution Frame), and Demarcation points. Patch panels help organize cables, while NICs (network interface cards) connect devices to a network.
+
+We wrapped up with network troubleshooting tools—cable testers, TDRs (Time Domain Reflectometers), OTDRs (Optical TDRs), tone generators, and network speed tests. These tools help diagnose cable faults and ensure network integrity.
+
+It was a LOT to take in, but every bit of this information is critical for understanding how networks are built and maintained. Time to review and process everything at my own pace!
