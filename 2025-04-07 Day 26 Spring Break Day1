@@ -1,0 +1,80 @@
+
+⸻
+
+Spring Break Day 1 – Review Mode Activated
+
+Today is the first day of spring break, but that doesn’t mean I’m taking a break from the grind. I’m using this time to slow down and really review everything we sped through last week.
+
+Over the weekend, I took a quiz. I’m not 100% sure how I did, but overall I felt okay about it. The questions were different from the usual—they were more scenario-based PBQs (Performance-Based Questions). To get through them, I had to really break each question down and look for key words or phrases to guide my answer. I haven’t received my score yet, but I’m hoping that strategy paid off.
+
+Today I started back at Module 1.1 – Network Topologies. Here’s a quick summary of what I reviewed:
+
+⸻
+
+Client-Server vs Peer-to-Peer Networks
+	•	Client: A device or application that requests services or data from a server.
+	•	Advantages: Easy to expand, scalable, centralized management.
+	•	Disadvantages: Expensive (server OS, advanced setup).
+	•	Peer-to-Peer (P2P): Devices share resources directly.
+	•	Advantages: Easy to set up, cost-effective.
+	•	Disadvantages: Hard to expand, no central control, security issues.
+
+⸻
+
+Network Topologies
+	•	Physical Topology: How devices are physically connected. Think “bird’s eye view” or “follow the cables.”
+	•	Logical Topology: How data flows regardless of how the physical network is set up. Think “follow the bits.”
+
+Examples:
+	•	Point-to-Point: Two nodes directly connected (e.g., computer to printer).
+	•	Bus: All devices share a trunk cable.
+	•	Pros: Simple, uses less cable.
+	•	Cons: One break = network down.
+	•	Ring: Devices form a closed loop.
+	•	Pros: Organized data flow.
+	•	Cons: One break disrupts the loop unless it’s a dual ring.
+	•	Star: All devices connect to a central hub or switch.
+	•	Pros: Easy to manage.
+	•	Cons: If the hub fails, the network fails.
+	•	Mesh: Devices are interconnected with no central point.
+	•	Pros: Fault-tolerant, multiple data paths.
+	•	Cons: Expensive and complex.
+	•	Partial Mesh: Some, not all, devices are redundantly connected.
+	•	Hybrid: A mix of two or more topologies.
+
+⸻
+
+OSI Model Review (with PDUs at Each Layer)
+	•	Layer 1 – Physical: Bits; cables, hubs, media converters.
+	•	Layer 2 – Data Link: Frames; MAC addresses, switches.
+	•	Layer 3 – Network: Packets; IP addresses, routers.
+	•	Layer 4 – Transport: Segments; TCP/UDP, flow control.
+	•	Layer 5 – Session: Controls start, manage, and end of sessions.
+	•	Layer 6 – Presentation: Encryption, translation (ASCII, Unicode).
+	•	Layer 7 – Application: Interfaces with user software (SMTP, DNS, FTP).
+
+Encapsulation: Each layer adds its own header.
+De-Encapsulation: Each layer removes a header as data is received.
+PDU (Protocol Data Unit): Name for the data at each OSI layer.
+
+⸻
+
+SOHO Networks & PSTN
+	•	SOHO Router: Handles both wired/wireless, DHCP, NAT.
+	•	Public IP on WAN side, private IPs for internal devices.
+	•	PSTN (Public Switched Telephone Network): The traditional landline system—copper/fiber lines, switching centers used for phone calls.
+
+⸻
+
+Troubleshooting Methodology (7 Steps)
+	1.	Identify the problem: Ask questions, inspect, recreate issue.
+	2.	Establish a theory: Use logic, top-down or bottom-up approaches.
+	3.	Test the theory: Confirm or rule out the cause.
+	4.	Establish a plan of action: Prioritize and prepare.
+	5.	Implement the solution: Apply the fix (restart, reconfigure, etc.).
+	6.	Verify full system functionality: Confirm issue is resolved.
+	7.	Document everything: Findings, actions, and outcomes for future reference.
+
+⸻
+
+That wraps up my review of Modules 1.1, 1.2, 1.3, and 1.4. Even on spring break, I’m putting in the time and effort to make sure I stay on track. Let’s keep going!
