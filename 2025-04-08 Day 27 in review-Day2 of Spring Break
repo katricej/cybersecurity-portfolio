@@ -1,0 +1,25 @@
+Day & Review – OSI Model, Practice Tests, and Continued Growth
+
+Today I focused on strengthening my understanding of the OSI model by watching a Professor Messer video. He used a mnemonic I was already familiar with:
+All People Seem To Need Data Processing — representing the seven layers from Application to Physical.
+
+Here’s a quick summary of what I reviewed:
+	•	Layer 1 – Physical: Deals with physical signals transmitted through cables or fiber. Troubleshooting at this layer might involve loopback tests (using IP address 127.0.0.1), replacing cables, or swapping out adapter cards.
+	•	Layer 2 – Data Link (Switching Layer): Manages MAC addresses and DLC protocols. This is where devices communicate on a local network.
+	•	Layer 3 – Network (Routing Layer): Involves IP addresses and routers. It handles fragmentation and routing between networks.
+	•	Layer 4 – Transport (Post Office Layer): Focuses on TCP (reliable) and UDP (unreliable) communications.
+	•	Layer 5 – Session: Manages and maintains connections between devices.
+	•	Layer 6 – Presentation: Handles encryption and data formatting (SSL/TLS).
+	•	Layer 7 – Application: The layer we interact with directly — examples include HTTP, HTTPS, FTP, DNS, and POP3.
+
+Professor Messer also related these layers to real-world examples using Wireshark, a free, open-source network protocol analyzer. He demonstrated how data is encapsulated and how each layer contributes—from seeing a website like https://mail.google.com at the application layer, to TCP and IP encapsulation in the transport and network layers, all the way down to electrical signals at the physical layer.
+
+In addition to the video:
+	•	I retook a networking practice test on Udemy. Yesterday I scored an 84%, and today I improved to a 90% — I’m definitely becoming more confident with the material.
+	•	I also retook a quiz on different cable types. My first score was 68.75% (22/32), and after reviewing, I brought it up to 81.25% (26/32). I was hesitant to retake it because I wasn’t sure which answers were right or wrong. While the score improvement is great, I wish I could see the questions I missed so I can focus on them going forward.
+
+My plan tomorrow is to go back and review the modules I haven’t fully absorbed yet and take more detailed notes. I’m proud of the progress I’m making and looking forward to building more confidence in these core networking concepts.
+
+⸻
+
+Let me know if you want a version tailored for social media, or if you’d like help organizing your notes into a study guide format. You’re really making solid progress!
