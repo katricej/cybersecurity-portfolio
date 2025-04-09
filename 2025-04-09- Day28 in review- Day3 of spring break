@@ -1,0 +1,10 @@
+I spent today diving into more networking fundamentals through Professor Messer’s videos, and the topics were rich with useful info! I reviewed:
+	•	Network Topologies – from star (aka hub-and-spoke) to mesh, hybrid, point-to-point, and even spine-and-leaf architecture. I learned that star topology is widely used in both small and large networks—like switched Ethernet—and that mesh topology, often found in WANs, offers great redundancy and fault tolerance. The spine-and-leaf setup was new to me—each leaf switch connects to every spine switch, which keeps the cabling simple and performance fast, though expansion can be pricey.
+	•	Copper Connectors & Cabling – I brushed up on RJ11 and RJ45 connectors, coaxial cables like the F-connector and BNC, and twisted pair standards under IEEE 802.3. It’s wild how essential cable types are to stable, fast connections.
+	•	Fiber Connectors – from SC and LC to ST and MPO/MTP, it was great to see how data centers and enterprise networks use fiber for speed and distance. I also learned the difference between multi-mode (short range with LED) and single-mode fiber (long range with lasers). Optical fiber is fascinating—secure, hard to tap, and blazing fast.
+	•	Copper vs. Fiber Cabling – I really appreciate how copper carries electrical signals and fiber transmits light. Each has its place, but fiber’s long-distance capabilities and resistance to interference really stand out.
+
+Small Win of the Day:
+I re-took the Udemy Practice Exam #1 and finally scored 100%—after five attempts! It reminded me that consistency really does pay off. Even though I aced it today, I’ll keep practicing that test to make sure it’s locked in.
+
+Learning something new every day—and loving the journey.
