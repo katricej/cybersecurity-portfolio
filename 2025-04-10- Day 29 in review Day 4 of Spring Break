@@ -1,0 +1,34 @@
+Module 3.1: Configuring Network Addressing
+
+Today I started reviewing Module 3.1: Configuring Network Addressing, and it kicked off with an important foundational piece—the Network Interface Card (NIC), also known as a network adapter. The NIC is the gateway to a network, allowing systems to connect to a medium, which is the path or channel used to transmit data between devices.
+
+I learned that there are two types of mediums:
+	•	Physical medium: copper cables (like Ethernet Cat5e/Cat6), fiber optic cables, coaxial cables, and wireless signals like radio waves, Wi-Fi, and Bluetooth.
+	•	Logical medium: how data is organized and transmitted on top of the physical medium. Examples include VLANs, tunneling protocols, and logical channels like SSIDs on Wi-Fi networks.
+
+NICs can be wired (Ethernet) or wireless (Wi-Fi) and they operate at the physical and data link layers of the OSI model. They convert binary (1s and 0s) into electrical signals, and can be built into the motherboard or installed into a PCI slot (Peripheral Component Interconnect).
+
+At Layer 2, the data link protocol governs how devices communicate over the medium. It includes:
+	•	Framing: breaking data into manageable pieces
+	•	Addressing: using MAC addresses
+	•	Error detection/correction: using CRC (Cyclic Redundancy Check)
+	•	Flow control: to prevent overwhelming receivers
+
+I also learned about the transceiver—a physical layer device that both sends and receives signals over copper or fiber.
+
+The NIC and its software driver (SFW) operate at Layer 2, using a MAC address, which is a 48-bit (6-byte) unique identifier burned into ROM. There’s also the Extended Unique Identifier (EUI), a 64-bit version used in IPv6. Some networks use Locally Administered Addresses (LAA) instead of factory-assigned MACs for things like virtual machines or custom configurations.
+
+I reviewed the Ethernet frame format, which encapsulates higher-layer data (like IP packets) into a Protocol Data Unit (PDU) for transmission across the network. Important parts include:
+	•	Preamble (7 bytes) & Start Frame Delimiter (1 byte): synchronization
+	•	Destination MAC (6 bytes) and Source MAC (6 bytes)
+	•	EtherType (2 bytes): identifies the Layer 3 protocol (e.g., IPv4 or IPv6)
+	•	Payload (46–1500 bytes): actual data
+	•	Frame Check Sequence (FCS - 4 bytes): error checking with CRC
+
+A broadcast address like FF:FF:FF:FF:FF:FF sends data to all devices in the broadcast domain—a logical group of devices that can all receive the same broadcast without needing to go through a router.
+
+Lastly, I reviewed:
+	•	MAC address format: 12-digit hexadecimal numbers like 00:60:8C:00:54:99, where the first 6 digits are the OUI (Organizationally Unique Identifier).
+	•	MTU (Maximum Transmission Unit): max Ethernet payload is usually 1500 bytes, and total frame size including headers is 1518 bytes. Jumbo frames can go larger.
+
+I also went through Set 2 of the Udemy practice test. It didn’t go as well as I hoped, but I recognized a lot of material thanks to our earlier modules and Professor Messer’s guidance—especially on key terms and understanding PBQs and scenario questions. I’ll keep practicing just like I did with Set 1 until I nail it!
