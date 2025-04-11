@@ -1,0 +1,22 @@
+
+Today’s focus: Taking the Udemy Network+ Practice Test Set 2.
+
+I actually started this practice test yesterday and didn’t do as well as I’d hoped—but instead of being discouraged, I used it as a learning opportunity. I went back, reviewed the questions I missed, and took time to research the topics more deeply. After doing that, I retook the test and scored a 95%!
+
+Some of the key concepts I dove into during my review:
+	•	Resource Pooling in cloud environments and the associated security concerns due to shared physical hardware.
+	•	WPA3, the latest and most secure wireless protocol, offering enhanced encryption and defense against brute-force attacks.
+	•	SIEM (Security Information and Event Management) systems, which combine SIM and SEM, allowing for centralized log analysis and threat detection across syslog, SNMP, and event data.
+	•	IPS, IDS, and Honeypots – understanding how each functions in a security architecture, especially the reactive capabilities of IPS vs. the monitoring focus of IDS.
+	•	Patch Antennas – low-profile antennas used for directional coverage, especially useful for point-to-point communication between buildings.
+	•	Network Flows like egress, ingress, and inbound data traffic – especially as it relates to subnet communication.
+	•	A wide range of cyberattacks, including:
+	•	Zero-day exploits
+	•	DDoS attacks
+	•	Brute-force attacks
+	•	Spoofing (including ARP and DNS spoofing)
+	•	VLAN Hopping – using switch spoofing or double tagging to breach VLAN boundaries.
+
+These topics came up in various forms throughout the test, and I’m glad I took the time to break them down and really understand them.
+
+It’s been a productive spring break for me! I’ve been staying diligent in my studies, making sure I’m staying on track with my cybersecurity goals. I’m feeling ready to dive back in on Monday with even more motivation and knowledge.
