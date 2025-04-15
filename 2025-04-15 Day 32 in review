@@ -1,0 +1,59 @@
+Wireless Access Point (WAP)
+Wireless Access Point (WAP) let's devices connect to the network wirelessly. The WAP is located on the data link layer two.  It reads MAC layer address in the frame.  It is often configure as a bridge which connects wireless segment to a wire segment. And wired and wireless are on the SAME subnet. A Subet is a group of IP addresses that belong together.
+
+Packet Sniffers
+Packet sniffers captures and analyzes network data. 
+• Frame by frame analysis of captured   tract.
+• like a digital wire tap for a network
+• look for Header/Payload detail
+• identify/extract files
+• "Packet Content"
+It can SEE what's been sent, WHERE it's going and WHERE it came from.
+
+Sniffer connections
+Switched Port Analyzer (SPAN) Is a feature on a switch that copies network traffic.  It collects packets and frames from a particular port. Mirrors, the traffic from a specific port or VLAN. He let you watch what's happening on a network.  "Port Mirroring".
+
+Test Acces Point (TAP)
+Test Access Point (TAP) create a copy of the traffic and send it to the package sniffer copies all frames (good and bad).  Information from the firewall to the switch and in/out to the Internet. 
+Passive TAP versus Active TAP
+A passive tap, just listens and copies traffic/data.  It doesn't touch or change the data. The network keeps running even if the tap is unplugged. A passive tap does not need power.
+And active tap interacts with traffic. 
+It may amplify signals regenerate them or need power to work. It could affect network if it fails or loses power.  An active tap needs power.
+
+Straight through cable, Crossover cable, and Rollover cable.
+You use a Straight through cable if the devices are in different layers of the OSI model.  And you use a crossover cable if the devices are in the same OSI model layer
+Layer 3- Router Server PC 
+Layer 2- Switch 
+Layer 1 Hub 
+For example, looking at the different layers above if you have a router and a router, you would use a cross cable because they are on the same layer of the OSI model (Layer 3).  If you have a router and a switch, you would use a straight through cable because they are on two different layers of the OSI model (Layer 3 and Layer 2). 
+A rollover cable is used in a console port for Out of Band Management.  Out of Band Management manages a device on a console port.  
+
+Auto MDI/MDIX
+MDI (Medium Dependent Interface) and MDIX (Medium Dependent Interface Crossover) are Ethernet interface types used in networking devices like switches, routers, and computers. They define how the pins in an Ethernet cable are used for transmitting and receiving data.
+Auto-MDIX, which automatically detects the connection type and adjusts the pinouts internally. Which means they can automatically figure out what kind of device they’re connected to and adjust the connection on their own, so you don’t have to worry about using the right type of Ethernet cable (straight through or cross over). Listed below is which layers and MDI or MDIX functions on.
+Layer 3- Router Server PC (MDI)
+Layer 2- Switch (MDIX)
+Layer 1 Hub (MDIX)
+
+Ethernet Switch Types
+Number of port 4,8,12,24,48, etc
+Modular ports are changeable and upgradable
+Fixed port has a number of ports and are unchangeable
+
+MAC Address Table
+Also known as Content Addressable Memory (CAM) table.
+It is user by Switches to map MAC addresses to specific ports.
+It helps switches forward traffic to the correct device on the network.
+It stores port MAC addressing
+
+Port Aggregation
+Port Aggregation combine multiple links into a single logical channel.  It increases bandwidth and provides redundancy.
+
+Spanning Tree protocol (STP)
+Spanning Tree protocol is a loop prevention mechanism. It prevents bridge loops, which are redundant paths between switches.  Provide fault Tolerance.
+
+Collision Domain
+Collision Domain is where packets can collide with each other when being sent on a shared medium. A group that can hear each other.  A switch separates collision domain.  Hubs creates collisions.
+
+Power Over Ethernet (POE)
+Power Over Ethernet specifies method for supplying electrical power over twisted pair ethernet connections. Is no need to have a wall socket AC ADAPTER.  This is useful for devices located far from power outlets, and constant power sources. Examples for when to use a POE would be for IP phones, security cameras, and wireless access points.
