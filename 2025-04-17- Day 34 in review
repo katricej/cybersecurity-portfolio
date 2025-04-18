@@ -1,0 +1,55 @@
+Today was all about understanding the MAC Address, IP Address and the Subnet Mask
+
+MAC Address
+The Media Access Control or MAC address is a unique identifier assigned by the Manufacturer.  It is permanent and used only in a local network.  
+The format is 48 bit, 6 pairs of letters and numbers
+
+IP Address
+The Internet Protocol or IP Address is a unique number that identifies a device on a network.  It is part of a range of numbers depending on the subnet mask or CIDR used with it.
+
+Subnet Mask ("Network Mask" "Netmask")
+Subnet Mask tells your device which part of an IP Address is the Network and which part is for the Hosts (devices)
+Identifies the Network portion of an IP Address
+Helps Devices determine which network or subnet it belongs
+Dividing large network into many smaller networks
+Each subnet portion has its own Network number, Broadcast number, and Host Address range
+
+Why Subnet??????
+Increase number of devices that can be added to LAN
+Reduce traffic congestion
+Reduce processing load on computers and routers
+Isolate sensitive systems on the network (security)
+Efficiently allocate available IP Address
+
+CLASS          FIRST OCTET RANGE          DEFAULT SUBNET MASK
+A                1-126                      255.0.0.0          /8
+B                128-191                    255.255.0.0        /16
+C                192-223                    255.255.255.0      /24
+D                224.239                    N/A (UNKNOWN)     
+E                240-255                    N/A (UNKNOWN)
+
+
+                        [-------32 Bits Total-------]
+SUBNET MASK            NETWORK BITS          HOST BITS            MEANING
+255.0.0.0                /8                    24                  FIRST Part = Network
+255.255.0.0              /16                   16                  FIRST 2 parts = Network
+255.255.255.0            /24                   8                   FIRST 3 parts = Network
+255.255.255.255          /32                   0                   All 4 parts = Network (1 Device only)
+
+APIPA
+Automatic Private IP Addressing range is a feature that allows devices to automatically assign themselves an IP Address when they cannot obtain one from the DHCP Server.
+Used to establish basic network connectivity on the same local network segment.
+APIPA address range 169.254.0.0 - 169.254.255.255
+If IP address has a "169" in the number range its APIPA
+
+Reminders: Private IP Address
+Class A  10.x.x.x
+Class B  172.x.x.x
+Class C  192.168.x.x
+169.254.0.1- 169.254.255.255 APIPA
+
+CIDR 
+Classless Inter-Domain Routing is a way to show how much of the OP address is for the Network
+A shorter way to write subnet masks
+Example: 255.255.255.0   = /24
+Example: 192.168.1.0/25  = 255.255.255.128
