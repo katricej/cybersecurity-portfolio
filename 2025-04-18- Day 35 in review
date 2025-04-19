@@ -1,0 +1,35 @@
+IPV4 IPV6 ARP 
+
+IPv4
+Uses 32 bits
+Allows about 4.3 billion unique addresses.
+IPv4 addresses are running out, which led to the creation of IPv6.
+Dotted Decimal Format/Binary Format
+Written as four numbers (0–255) separated by dots.
+Each number is 8 bits (called an octet)
+IPv4 uses ARP to resolve IP to MAC addresses on local networks.
+Unicast, Broadcast, Multicast
+
+IPv6
+128 bits
+Hexadecimal Notation:
+Written in 8 groups of 4 hexadecimal digits, separated by colons.
+Uses multicast and anycast, but not broadcast
+Stateless Address Autoconfiguration (SLAAC) which means devices can automatically configure themselves without a DHCP server.
+ 
+Unicast, Broadcast, Multicast, Anycast
+
+Unicast: One-to-one communication.
+"One-to-One"
+Broadcast: One-to-all (within the local network).  "ALL"
+Multicast: One-to-many (selected group) "GROUP"
+Anycast: IP address, and the network routes your request to the closest one. Used by routers
+"NEAREST"
+
+ARP
+ARP stands for Address Resolution Protocol.
+It’s used to find the MAC address of a device if you already know its IP address.
+ARP acts like a translator between IP and MAC addresses
+Works only on local networks.
+Uses a broadcast message to ask all devices.
+Stores information in an ARP cache 
