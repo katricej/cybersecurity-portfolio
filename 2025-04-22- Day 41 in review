@@ -1,1 +1,26 @@
+Network Address Translation
+
+Network Address Translation (NAT)- 
+Allows private network to connect to the Internet without using registerd addresses for each host/node
+Translating Private address to Public Addresses
+Advantages: Improves Security, Conserves IPv4 address space
+
+4 TYPES OF NAT
+
+1-    STATIC NAT (SNAT)
+One Private IP address is PERMANENTLY mapped to one Public IP address
+Deals with Inbound traffic
+NEVER CHANGES!!
+"ONE TO ONE"
+Limited number of leases/ IP Addresses
+
+2-    DYNAMIC NAT (DNAT)
+Private Ip address are mapped to Public Ip address from a pool, BUT the mapping CHANGES and is NOT FIXED
+"POOL"
+
+PORT ADDRESS TRANSLATION (PAT)
+Allows MANY devices on a private network to SHARE a single public Ip address.
+"MANY TO ONE" 
+Random numbers
+Uses Port Numbers
 
