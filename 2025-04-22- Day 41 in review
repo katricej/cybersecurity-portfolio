@@ -22,5 +22,25 @@ PORT ADDRESS TRANSLATION (PAT)
 Allows MANY devices on a private network to SHARE a single public Ip address.
 "MANY TO ONE" 
 Random numbers
-Uses Port Numbers
+Uses Port Numbers- EX: HTTP Port 80, HTTPS Port 443
+
+PORT FORWARDING
+A way to allow External Devices to services on a Private Network.
+Incoming Traffic- "Outside world coming IN"
+
+Edge Router
+Edge Router is located at the Boundary of a network that connects to External Networks (EX: The Internet)
+Manages the Flow of Data between the Internal and External networks
+
+TYPES OF EDGE ROUTERS
+CUSTOMER EDGE (CE) AND PROVIDER EDGE (PE)
+
+Customer Edge (CE)
+Customer Edge is located at the edge of Customers Network
+Connects Internal Network to Providers Network
+Security Barrier for Customers Network
+
+Providers Edge (PE)
+Providers Edge is located at the edge of a Providers Network
+Maintain Integrity and Confidentiality of a Customers Data as it travels across the Providers Network
 
