@@ -1,0 +1,93 @@
+Lessons covered today
+Routing Technologies 
+Dynamic Routing Technologies
+
+Rounting Technologies define how packets are directed and forwarded across interconnected networks to reach their final destination
+
+Static and Dynamic Routing
+Static Routing is MANUALLY configured
+used where network security is a concern
+Adavantages: Simplicity, Realiability, Predictability, Security, and Performance
+
+Dynamic Routing is AUTOMATICALLY learned
+Routers automatically adapt to changes in the network
+Advantages: More Flexible and resilient than Static
+Disadvantages: More Complex to setup, Less Secure
+
+
+Metrics
+Metrics is a value that routers use to determine the BEST PATH to a destination.
+Lower Metric= More Preferred Route / EX: 1s is better than 2 (the lower number is a better option/route)
+Metric Values- Assigned by the routing protocol
+
+Routers
+Routers
+Digital Direction Signs
+Determine the BEST PATH for packets to travel
+Uses Routing tables
+
+Routing Tables
+Routing Tables -A list of directions.  Contain information about HOW to reach different network destinations
+INCLUDES:
+Destination Network- Where the packet wants to go
+Next Hop- Where to send the next packet
+Interface- Which port to use to send it
+Metric- How "good" or "bad" the path is
+Administrative Distance (AD)- Trust level of the source
+
+Administrative Distance
+Administrative Distance (AD) - Distance used by router to determine which routing protocol has priority.  
+A number that routers use to decide which routing source to TRUST when there are mulitple routes to the same destination.
+The LOWER the AD the MORE TRUSTWORTHY the route
+
+Subinterface
+Subinterface- a logical division of a single physical network interface on a router or switch.
+It allows that one physical interface to carry multiple VLANS of IP Networks, behaving as if it were multiple interfaces
+SAME physical port, BUT treated like SEPERATE Connections
+
+Routing Packets means figuring out where to send data so it gets to the right destination
+
+Routing Metrics
+Routing Metrics define the value or cost assigned to different paths in a network.
+Routing Metrics Protocols
+Hop Count- Number of Routers (used by RIP)
+Bandwidth- Higher Bandwidth= Lower cost (used by OSPF, EIGRP)
+Delay- Time for a packet to reach destination (used by EIGRP)
+Cost- Admin-defined value, often based on bandwidth (used by OSPF)
+Reliability- Link Stability (used by EIGRP)
+MTU- Maximum Transmission Unit size
+Load- Current traffic on the path
+
+TERMS TO KNOW
+
+Routing Information Protocol (RIP)- one of the oldest distance vector dynamic routing protocols, designed for small to medium-sized networks
+
+Distance Vector Protocol- shares entire routing table with NEIGHBORS
+Rumor
+Hop
+uses RIP
+uses IGRP
+
+RIPv1- Classful (NO support for CIDR or subnet masks)- OUTDATED doesn't understand subnets
+
+RIPv2- Classless SUPPORTS subnetting and multicast updates
+
+Enhanced Interior Gateway Routing Protocol (EIGRP)- Finds the BEST PATH within a network by using a combination of metrics like bandwidth and delay
+Cisco Proprietary Protocol
+Hybrid Protocol
+Features fast convergence, Low bandwidth, used in Enterprise Networks
+
+Interior Gateway Protocol (IGP)- Helps routers share information to route data
+Three Types- Distance Vector, Link State, and Hybrid 
+
+Exterior Gateway Protocol (EGP)- Manages how data is routed between large networks.
+Ex: Border Gateway Protocol (BGP)= Internet
+
+Link State- routing protocol where routers share information about the state of their links (connections) with ALL other routers in the network.  
+Actual information
+Not Rumor
+uses OSPF
+usesv IS-IS
+
+Hybrid-combination of Distance Vector and Link state
+uses EIGRP
