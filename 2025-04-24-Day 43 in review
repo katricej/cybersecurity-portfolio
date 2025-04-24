@@ -69,4 +69,104 @@ UTM- All in one security device that combines multiple security features and ser
 Or act as a Firewall, Switch, Load Balancer, or DHCP server
 
 NEXT GENERATION FIREWALL (NGFW)
-Advanced security tool designed to protect
+Advanced security tool designed to protect businesses from Cyber threats
+Analyze content
+Deep Packet Inspection
+Application Awareness 
+Intrusion Prevention Systems (IPS)
+User Identification
+
+APPLICATION FIREWALL
+Decides whether to drop or send packet based on the applicaiton data available in the packet.
+Blocks URLs, Specific words, Images, Videos
+
+HARDWARE BASED FIREWALLS
+Physical Device (EX: Server)
+Protects the entire Network /A network segment
+Most are "Network Based" (though they use Hardware and Software)
+
+SOFTWARE BASED FIREWALLS
+Code runs inside device via an app and inspects traffic received by a host. 
+Almost all Host-based firewalls are Software firewalls
+EX: MS Defender, Symantec, McAfee
+
+APPLIANCE FIREWALLS
+Stand alone Hardware firewall
+Performs ONLY the function of a Firewall 
+EX: Next Generation Firewall (NGFW)
+
+ROUTER FIREWALL
+Firewall functionsat the Layer 3 & 4 (Switch and Access Point)
+Firewall functionality is built into the router firmware ( SOHO, Enterprise-class router)
+
+PROXY SERVER
+Acts as an agent on behalf of its client
+A caching machine
+Controlling inbound and outbound traffic
+Can keep track of all traffic outbound and inbound
+Can be setup to bypass firewalls
+Also Known As: "Bypassing Firewall" or "Climbing Over the Great Wall"
+A proxy is someone or something that has authority to do something for another person or thing
+
+FORWARD PROXY
+Protects the Client
+Client going OUT to the Server
+Private Network > Internet > Forward Proxy > Server
+Benefits:
+Logs User activity
+Can bypass restricted content
+Speed - Caching (Storing) copies of Websites in its Database
+
+REVERSE PROXY
+Protects Servers
+Outside Traffic Coming IN to the server
+Outside Traffic > Internet > Reverse Proxy > Server
+Single point of entry that can regulate traffic
+Benefits:
+Increases security on private networks(HIDE Addresses)
+Block Malicious traffic such as DDoS attacks
+Load Balancing- evenly distribute traffic
+
+TYPES OF NETWORKS
+
+LAN- Local area Network
+Group of devices/computers located on the same network.  Most common Ethernet
+
+WLAN- Wireless Area Network
+Uses wireless communication
+Has wifi router or wireless access point
+LAN without cables
+
+CAN- Campus Area Network
+Joins two or more LANs together within a limited area
+
+MAN- Metropolitan Area Network
+Larger the a CAN
+Spans over several buildings in city/town
+Uses Fiber Optic
+EX: Police station, City Hall, Fire Dept
+
+SAN- Storage Area Network
+Stores and provides access to large amounts of Data
+Not affected by Network Traffic
+
+WAN- Wide Area Network
+Largest type
+EX: The Internet
+
+Network Topology
+Star- Most common, All computers have own cable connections
+Ring- Old, Data packet sent around ring until it gets to its destination
+Bus- Very Old- connected to a single coax cable (T connector)
+MESH- computer connected to every other computer.  Expensive, used in WAN (internet)
+
+THREE-TIERD NETWORK HIERACHY
+Scalable- the ability to provide growth
+Resilient- Tolerate faulty devices and keep working
+Manageable- How easy is it to monitor changes, troubleshoot, etc
+
+Cisco Design
+Model used to struture large enterprise networks. It breaks down into three layers:
+1)    Core- Transport Large amounts of data across the network
+2)    Distribution- Policy control, Routing, and Access control. Enforces rules, aggregates access layer traffic
+3)    Access- Provides Network access to end devices (PCs, printers, IP phones)
