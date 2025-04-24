@@ -1,0 +1,72 @@
+FIREWALLS
+
+Firewalls- allows or denies traffic
+Filter
+
+TYPES OF FIREWALLS
+
+Packet Filtering Firewall
+Most Basic of Firewalls
+Inspects individual packets based on Rules
+Stateless
+Examines address information in packet header
+Operates at Layers 3 Nework and Layer 4 Transport of the OSI Model
+Used in routers and basic firewalls
+
+Circut Level Gateway
+A type of firewall that operates at the Session layer 5 of the OSI Model
+Manages TCP and UDP
+Does not Filter packets
+Keeps Connections private
+
+Application Level Gateway
+Also known as a Proxy Firewall
+Inspects and filters data within applications like HTTP, FTP, and DNS
+Acts as a Proxy- "Middle Man" between user and destination
+Hides Internal Network details
+Can Block specific actions, like file downloads or commands
+Works at the Application Layer 7 of the OSI Model
+
+RULES USED
+MAC addresses
+IP Protocols
+Ports
+Domain Name
+Applications/Content
+Keywords
+Conversation/stream
+
+STATEFUL VS STATELESS
+
+STATEFUL 
+Makes decisions based on a Whole picture
+Monitors the state of active connections and REMEMBERS the context of traffic
+Track Sessions
+Remembers Connections
+Context Aware
+Dynamic Rules
+Smart Filtering
+Remembers the State
+Long Memory
+Ex: It's like a security guard who remembers everyone who is in the building
+The most important feature of Dynamic/STATEFUL is packets are examined as a stream. 
+Packets are examined as a WHOLE, not as a simple sum of parts
+Analyzes the Incoming packet for its Authenticity in order to ensure that the packet is NOT altered during the transmission.
+
+STATELESS
+Static- makes decisions based on variables (IP address, MAC address, Port numbers)
+Treats each packet as an independent
+NO Memory
+Rule Based
+Fast but Basic
+Context-Blind
+Treats each packet like it's brand new
+Ex:  It's like a guard who checks each visitor seperately, and does not remember who came in before
+Short Memory
+
+UNIFIED THREAT MANAGEMENT (UTM)
+UTM- All in one security device that combines multiple security features and services into a single appliance 
+Or act as a Firewall, Switch, Load Balancer, or DHCP server
+
+NEXT GENERATION FIREWALL (NGFW)
+Advanced security tool designed to protect
