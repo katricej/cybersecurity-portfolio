@@ -3,6 +3,15 @@ Virtual Local Area Network
 Sepearate Network Traffic
 Layer 3 Switches allow communicate between VLANs (Inter-VLAN switching)
 VLAN uses switch ports to define a broadcast domain
+The computers, servers and other network devices are logically connected regardless of their physical location
+Can logically create several virtual networks to Seperate the network broadcast traffic
+Help with Traffic Management
+Created at the switch 
+
+WHY VLANS???? (3 reasons)
+Segmentation
+Simplicity of Network design and deployment
+Easier Troubleshooting and Management
 
 Layer 3 Switches
 Layer 3 switches work on the principle of "Route Once", Switch MANY, which many that once a route is discovered, it is Cached with the Destination MAC address, and subsequent communications are switched without invoking the routing lookup.
@@ -25,4 +34,26 @@ If you use Coax there will be a collision
 Broadcast Domain
 Broadcast Domain- Logical group of devices on the same datalink network can reach each other
 
-VLAN 
+SUBNETS AND VLANs
+Subnets seperate Networks Physically
+VLANs seperate Networks Virtually
+Subnets and VLANs are used to separate or break down a network into smaller network
+
+STATIC AND DYNAMIC VLAN
+
+Static VLAN is a  Port-Based VLAN that requires Manual assignment of individual ports on a switch to a Virtual Network
+
+Dynamic VLAN is based on a device instead of a port location
+Usually MAC-based 
+2 Advantages: Flexibility and Security
+Flexible BUT more Complex
+One port can be a member of Multiple VLANs
+
+Trunking- The process of carrying multiple VLANs over a single physical link between switches OR Between a Switch and a Router
+Uses IEEE 802.1Q
+Provides VLAN ID for frames traversing between switches
+Can be configured between 2 switches OR Between a Switch and a Router
+
+Inter-VLAN routing
+Inter-VLAN routing is the process that allows communication between different VLANs in a network.  
+By default, devices in separate VLANs can't communicate unless routing is configured
