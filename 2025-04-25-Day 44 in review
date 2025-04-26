@@ -1,0 +1,28 @@
+VLANS 
+Virtual Local Area Network
+Sepearate Network Traffic
+Layer 3 Switches allow communicate between VLANs (Inter-VLAN switching)
+VLAN uses switch ports to define a broadcast domain
+
+Layer 3 Switches
+Layer 3 switches work on the principle of "Route Once", Switch MANY, which many that once a route is discovered, it is Cached with the Destination MAC address, and subsequent communications are switched without invoking the routing lookup.
+Operate at Layer 3 & 2
+Can route data between VLANs 
+More Expensive
+Slower
+Complex Configuration
+
+Layer 2 switch stores the MAC addresses in its table
+Most common type of switch; found in Homes, Small-Med Businesses
+
+Collision Domain
+Collision Domain is part of network where data collide with each other
+Collisions happen because of HUBS (they are half-duplex)
+Switches will only forward data to the intended destination port
+If you use a Twisted Pair it wont't be a collision
+If you use Coax there will be a collision
+
+Broadcast Domain
+Broadcast Domain- Logical group of devices on the same datalink network can reach each other
+
+VLAN 
