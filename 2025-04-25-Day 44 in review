@@ -57,3 +57,24 @@ Can be configured between 2 switches OR Between a Switch and a Router
 Inter-VLAN routing
 Inter-VLAN routing is the process that allows communication between different VLANs in a network.  
 By default, devices in separate VLANs can't communicate unless routing is configured
+
+Inter-VLAN Routing is the process that allows communication between different VLANs (Virtual Local Area Networks) in a network. By default, devices in separate VLANs can’t communicate unless routing is configured.
+
+There are three main methods for Inter-VLAN routing:
+
+1. Router-on-a-Stick (Legacy Method)
+A single physical router interface handles traffic for multiple VLANs using subinterfaces.
+A trunk link connects the router to a switch.
+Each VLAN gets a subinterface on the router 
+Each subinterface is assigned an IP address in the corresponding VLAN’s subnet.
+Good for Small networks or labs.
+
+2. Layer 3 Switch (Modern Method)
+A Layer 3 switch does routing internally without needing an external router.
+Create VLANs and assign them to ports.
+Assign SVIs (Switched Virtual Interfaces) for each VLAN on the switch.
+Enable IP routing on the switch.
+
+3. External Router with Multiple Physical Interfaces
+Each VLAN is connected to a separate physical interface on the router.
+Uses more hardware and interfaces; not scalable.
