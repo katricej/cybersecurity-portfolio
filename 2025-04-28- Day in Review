@@ -1,0 +1,38 @@
+PORTS
+Port- is NOT a physical connection 
+A logical connection
+Specifically determines which program or services on a Computer or Server
+
+NETSTATE
+Netstate- Network Statistics- Command Line tool that is used to display the current network connections and port activity on your computer
+Can be combined with subcommand or switches 
+Examples:
+netstat -n
+netstat -b
+netstat -f
+
+DHCP Server Port 68, 69
+IP Address
+Subnet
+Default Gateway
+DNS server
+
+Assigns IP Address as a Lease
+Lease- amount of time an IP Address is assigned to a computer
+Must request to renew Lease or lease will expire
+
+Reservation- Ensures that a specific computer or device will always be given the same IP Address
+Typically given to special device or computers such as printers, servers, routers
+
+Exclusion- Define a range of IP addresses kthat the DHCP server will never assign preventing conflicts with statiscally configued devices or other purposes 
+Define a range of IP addresses within your DHCP scope that the server will not use for automatic assignments
+
+DHCP RELAY
+DHCP Relay- used when a DHCP client (like a laptop or phone) and the DHCP server are on different networks (subnets)
+Forward Broadcast to DHCP server
+Send DHCP offer to relay
+Acts as a Proxy for DHCP server
+An "IP Helper"
+Router working as DHCP relay
+
+W
