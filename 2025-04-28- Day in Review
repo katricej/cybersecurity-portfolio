@@ -35,4 +35,25 @@ Acts as a Proxy for DHCP server
 An "IP Helper"
 Router working as DHCP relay
 
-W
+Why Deploy a DHCP Relay???
+A sercver may not be feasible, but want to use Windows server to manage DHCP
+Better integration with other services
+ - NAP  Network Access Point
+
+CONFIGURING DHCP  
+The DHCP Relay agent MUST know the DHCP server location (IP address and Route) 
+The DHCP relay interface MUST receive the network broadcast
+
+IPv6 ADDRESS INFORMATION
+Uses SLAAC by default
+SLAAC- Stateless Address Autoconfiguration is a method in IPv6 that allows devices to automatically configure their own IP addresses without the need for a centralized server like DHCP
+Hosts ability to get address information by itself
+Stateful autoconfiguration normally work on Client-server model
+
+DHCPv6
+DHCPv6- Dynamic Host Configuration Protocol for IPv6
+The version of DHCP specifically for IPv6 networks
+Assigns IPv6 addresses to devices (hosts) automatically
+Also known as SLAAC- allows hosts to self configuration their IPv6 addresses
+Network Protocol for configuring IPv6 clients with IP prefixes and other information required to operate in an IPv6 network
+Used when NO ROUTER is found OR If Router Advertisement message enables the use of DHCPv6
