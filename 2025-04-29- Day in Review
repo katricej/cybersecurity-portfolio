@@ -51,3 +51,26 @@ Cache-only- does not host any authoritative zones, but resolves and caches DNS q
 Authoritative- Portion of the DNS where a DNS server holds the official records for a domain or subdomain (zone defines actual data)
 Non-Authoritative- refers to how a DNS server handles queries- not to a specific type of zone file
 Stub zone- zone used to simplify name resolution between seperate DNS namespaces. Contains only the essential records needed to locate the Authoritative DNS servers
+
+Pointer Record (PTR)
+Reverse of A and AAAA 
+Resolve IP address to Domain Names
+
+Format of Records
+Owner- EX:- www, mail
+Class- Ex:- IN (internet)
+Type- EX:- A (most common), AAAA, MX, CNAME, TXT. NS
+Value- EX:- 1..1.1.1, 20001::1:2:7, 1)Mail.com/2)Mail.com
+
+Internet Assigned Numbers Authority- (IANA)
+Organization responsible for coordinating key aspects of the internets unique identifiers
+
+TYPES OF DNS SERVERS
+Resolver- receives DNS queries from clients (like your computer or phone), and finds the IP address associated with domain names 
+Recursive-Contacts other DNS servers (root>TLD>Authoritative) on clients behalf.  Does all the work for the client
+Iterative- If it doesn't know the answer, it returns a referral to another DNS server that might know more. Does not do all the work
+Caching-Only- only resolves queries.  If the server has the answer in its cache, it returns it immediately
+Forwarding- Does not resolve queries, but instead forwards them to another DNS server
+Authoritative- server that holds and serves the actual DNS records. Provides final authoritative answers
+Primary ( master)- responsible for storing the original copies of the zone files for a domain
+Secondary (slave)- read only copy of the zone data from the Primary DNS server. Performs zone transfers from the Primary server to get the latest data
