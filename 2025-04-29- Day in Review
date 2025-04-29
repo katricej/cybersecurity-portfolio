@@ -1,0 +1,53 @@
+DNS RESOURCE RECORD TYPES
+
+START OF AUTHORITY (SOA)- Primary DNS name server that is Authoritative for the domain or zone.  
+Stores: Contact info, Serial Number for version control
+Only One SOA
+Indicate Authority for DNS zone
+
+Name Server (NS)- provides the name of the Authoritative name server within a nanme
+Maintains name space in zones
+Can manage multiple zones
+
+IPv4 Host (A)
+Host record to resolve a name to an IPv4 address
+
+IPv6 Host (AAAA)
+Host record to resolve a name to an IPv6 address
+
+Canonical Name (CNAME)
+Alternative name for a particular A or AAAA record
+Resolve Domain to Domain names
+"Alias" for another Domain name
+Computer reads Domain names from Right to Left
+EX: www.amazon.com (original name)>>  amazon.com (CNAME)
+
+Mail Exchange (MX)
+Identifies a host record that functions as a email server for the domain
+Will Always have a (A) record + MX
+1)  Create (A) record 
+2)  Create MX 
+Have Primary and Secondary email
+
+Text (TXT)
+Contains Misc info about a Domain
+Stores any free-form that may be needed to support other network services
+Sender Policy Framework (SPF)- An email authentication protocol used to prevent email spoofing
+Authentication method that allows a domain owner to specify which mail servers are authorized to send email on behalf of that domain
+Domain Keys Identified Mail (DKIM)- email authentication method that helps protect email senders and recipients from spam, phishing, and spoofing.
+                                    Verifies that an email was not altered during transit.
+
+Host File
+File on host contains IP address to host name entries
+Used for tesing purposes
+
+
+
+DNS ZONES
+
+Primary (Master)- Zone records can be edited
+Secondary (Slave)- Read-only copy of zone
+Cache-only- does not host any authoritative zones, but resolves and caches DNS queries for clients
+Authoritative- Portion of the DNS where a DNS server holds the official records for a domain or subdomain (zone defines actual data)
+Non-Authoritative- refers to how a DNS server handles queries- not to a specific type of zone file
+Stub zone- zone used to simplify name resolution between seperate DNS namespaces. Contains only the essential records needed to locate the Authoritative DNS servers
