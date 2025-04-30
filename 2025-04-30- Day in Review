@@ -1,0 +1,135 @@
+HTTP
+Hypertext Transfer Protocol
+A browser to talk to web service
+Sent in Clear text
+Vulnerable to hackers
+Unsecure
+
+HTTPS
+Hypertext Transfer Protocol Secure
+Encrypts data being retrieved by HTTP
+Uses encryption algorithm
+Encrypted text
+
+SSL
+Secure Sockets Layer
+Layer 5 Session Protocol
+Ensure secure connection between the web server and a web browser
+Certificate used to authenticate identity of website
+
+TLS
+Transport Layer Security
+Layer 5 Session Protocol
+Successor of SSL (Newer Version)
+Latest Industry standard Cryptographic protocol
+TLSv1.1 and v1.2 most secure versions
+
+SSL/TLS Handshake Process
+Client Hello>>>>>>
+<<<<<<<Server Hello
+Client Key exchange>>>>>>>
+Finished Client>>>>>>>>>>>
+<<<<<<<<<<Finished Server
+
+NTP
+Network Time Protocol
+Allows computers to sync clock over network
+Application that do not need precision (Internet and Corporate Networks) 
+For IT Information Technology
+
+PTP
+Precision Time Protocol
+Used in Industrial Control Systems (A factory)
+Accurate withing a few microseconds
+Network Multicast for video PTP preferred
+For OT- Operation Technology
+
+BMC
+Best Master Clock 
+Used to determine the best Clock or Grand Master
+
+FTP
+File Transfer Protocol
+Transfer files between computers and servers network
+Can configure your own computer to act as a FTP server
+Filezilla a free FTP client
+Transferring files between computers
+NOT secure (NOT encrypted) S
+Sent in clear text
+Should only be used on a limited basis
+
+SFTP
+Secure File Transfer Protocol
+Data is encrypted using secure shell
+Authenticates the user and the server
+
+TFTP
+Trivial FIle Transfer Protocol
+Connectionless Protocol
+Uses UDP instead of TCP
+
+SMB
+Server Message Block = Windows
+
+NFS
+Network File System= Unix or Linux
+Goof for Host Authentication
+
+SMTP
+Sending emails
+"Sending Mail To People"
+Is like a Mailman
+Uses TCP Protocol
+Connection Oriented 
+Guarantees delivery of email
+
+POP3
+Post Office Protocol 3
+Download email to your device
+Only downloads what is in YOUR Inbox folder
+Does NOT sync folders
+Email deleted on the mail server once its downloaded to a device
+
+IMAP
+View email thats on the server from multiple devices
+Caches local copies of the email onto all of your devices
+
+VOIP 
+Voice Over Internet Protocol
+Uses internet connection
+Can be USB, Wireless IP Phones, Conference Phones, Video Phones
+Audio, Video, Text based
+Advantages:
+Caller ID     Voicemail     Lower Prices    Convenience
+Call Recording    Support for remote work
+For a VOIP phone you need:  Phone, Provider, and Switch, Uses RJ45 cable
+Or to use a regular phone with some VOIP capabilites you can use a VOIP adapter to connect
+
+SIP
+Session Initiation Protocol
+Initialize VOIP calls
+
+Professional Development Wednesday
+86,400 seconds in a day
+TIME- we all get the SAME amount of time per day
+We all get the Fair and Equal
+Time is Valuable
+Limited
+Manage it Carefully
+Schedule times 
+Habits/Disciplines
+Delegate to Children
+Priortize
+Remove distractions
+TO DO List 
+Use Electronic Calendars
+"Swallow the Frog" Analogy a task can be ugly or not fun but its necessary  
+Just do it first and get it out the way early first 
+
+Town Hall Meeting with Jeanie and Jahari (Answers were not all my personal opionion)
+Successes, Challenges, Resources Sharing, Aspirations, and Support
+The Successes were passing the Linux Test, Speakers coming in the class, Networking opportunities, and Tech skill development
+Aspirations- Certifications
+Challenges- Time constraints, Pace of course, Last minute schedules or tasks
+Resource Sharing- Networking Events
+My personal suggestion was that we focus more on Mock Interview prep, Resume help (which we did last week), I would like to work on Projects to gain more hands on experience to add for my resume
