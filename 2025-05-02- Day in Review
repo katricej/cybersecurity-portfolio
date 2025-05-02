@@ -72,3 +72,45 @@ Organize and share information with network management tools
 Trap- sent by agents when a fault occurs
 A type of alert
 Port UDP 162
+
+
+Network Device Logs
+Logs- provides performance, troubleshooting, security (auditing) information
+Metadata plus event description
+
+Metadata- Data about Data
+Date, Time, Category, Event ID
+
+Log Types (System and Application Logs)
+System- Startup Events, Changes in OS
+Application- Events for single service (DHCP, DNS, HTTP, RDBMS)
+
+Audit Logs
+Use of Authentication and Authorization
+EX: Sucess/Fail Events
+
+Performance/Traffic Logs
+Stats for computer, storage, network resources
+
+Network Device Log Usage
+Troubleshooting and Performance
+Security and Compliance
+Log Management Practices
+
+Log Collectors 
+Collects event messages from numerous devices to a single storage location
+ “centralized collection” of events from “multiple sources”
+Simplify network log management
+Aggregate log data into single repository
+
+Syslog
+Provide a standardized protocol for sending log messages
+ Syslog severity levels
+ 0 (emergency) down to 7 (debug)
+
+
+Security Information and Event Management (SIEM)
+Analyzes security alerts from applications and network devices in real-time
+        Ex: Splunk, Microsoft Sentinel
+Integrates Security Information Management (SIM) and Security Event Management (SEM)
+
