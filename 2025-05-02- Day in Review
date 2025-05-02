@@ -22,3 +22,53 @@ System guarantees certain level of availability
 Services are available in the event of some failure
 Measured as percentage (100%=zero downtime)
 Always ON, Always Available
+
+System of Nines (99.999%)
+Refers to system and Network availability
+5 (9s) 5 secs/yr Downtime
+6(9s) 32 sec/yr Downtime
+4 (9s) 52 min 36 sec/yr
+3 (9s) 8 hr min/yr Downtime
+2 (9s) 3 days/ 5hr 40 min/yr Downtime
+1 (9s) 332 days/yr
+0(9s) 100% Downtime
+
+Fault Tolerance
+Maintain uptime in the case of a failure 
+Add Complexity
+
+Load Balancer
+A hardware device or Software that distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed
+
+Load Balance Scenerios
+* Round Robin (in sequence) 1, 2, 3 / a, b, c
+* Smart LB works in cooperation, Going back and fourth
+* Random Select uses different algorithms (2,1,3/3,2,1,)
+
+Configuration Management
+Identify and Document All infastructure and devices
+Service assests- Things, Processes, People
+
+Configuration Item (CI) asset requires specific management procedures
+
+Configuration Management System (CMS) 
+Tools databases collect, store, manage, update, present info about CI
+
+Baseline- Something used to comparte (Starting Point)
+
+SMNP Simple Network Management Protocol
+Log Events
+Framework for remote management and monitoring of servers and network appliances (such as switches, routers, and servers)
+Components:
+SNMP Manager- send and receives SNMP messages to manage and monitor devices on IP Network
+Process- SNMP Manager>>Send Message>>SNMP Agent
+        SNMP agent process message, retrieve requested data >> MIB
+
+MIB- Management Information Base
+Hierarchial collection of managed resource information
+Records unique to a device
+Organize and share information with network management tools
+
+Trap- sent by agents when a fault occurs
+A type of alert
+Port UDP 162
