@@ -1,0 +1,24 @@
+Business Continuity Plan (BCP)
+Plans that minimize site-wide interruptions to business operations
+
+Business Impact Analysis (BTA)
+Identify assets/ processes CRITICALLY IMPORTANT to operations
+
+Disaster Recovery Plan (DRP)
+Structured approach to resume operations after an incident
+Focuses on data and critical system availability
+
+CIA
+Confidentiality- Encryption
+Integrity- No Alteration, No Modification, No change
+Availibility- The quality of being able to be used or obtained
+
+Availabilty
+Percentage of time system is online
+Usually expressed as percentage of Uptime in a given year
+
+High Availability
+System guarantees certain level of availability
+Services are available in the event of some failure
+Measured as percentage (100%=zero downtime)
+Always ON, Always Available
