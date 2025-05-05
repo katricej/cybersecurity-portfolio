@@ -1,0 +1,67 @@
+Security Concepts
+Network Threats and Attacks
+Spoofing Attacks
+Rogue System Attacks
+Social Engineering
+
+Threat-Potential harmful event/occurence
+Likelihood- Probability/Chance
+Impact- Value of Threat ($$$)
+
+Risk- Likelihood and Impact a Threat will exploit Vulnerability
+-Threat Harmful Event
+      --Manmade Malware
+      --Nature- Covid
+
+Vulnerability- Weakness
+Likelihood- % Probability (Exploit)
+Impact- $$$
+
+Security Audit- Systematic Evaluation of a companys information system security 
+--Identifies strengths and weaknesses
+
+TYPES OF AUDITS
+Compliance- Verify adherence to laws, regulations, and standards 
+Risk-Based-  Identifying and prioritizing potential threats/vulnerabilities 
+Technical-  Deep-dive into IT infrastructure
+
+General Data Protection Regulation (GDPR) 
+Scope: collection/ processing of personal data in the EU
+
+Payment Card Industry Data Security Standard (PCI DSS) 
+Scope: organizations handling credit card transactions
+
+ Security Controls (countermeasures) 
+
+ Cryptography- study of hiding/encoding data; “Secret Writing” 
+ ---mathematical techniques to prevent data from being read/modified
+
+Three main types of algorithms (math formulas) 
+1)  Hash 
+2)  Encryption 
+    --Symmetric key 
+3)  Asymmetric key
+
+Hash- Plain Text  >>  #  >>  Hashed Text
+Integrity- has NOT been modified, Use comparison to Check
+Hash Ex: MD5, SHA, SHA128, SHA512, SHA256
+MDA and SHA has probability for Collision
+Algorithm executes math calcuation on data (Plain text) to create fixed- length value (cipher- text)
+Also called "Check sum" "Message Digest", "One way Street"
+Use-case, Secure password storage verifying data
+1)Secure     2) Fixed-size   3)Unique
+
+Symmetric Key- Single Key
+EX: RC5, AES, DES, 3DES
+Encryption Confidentiality
+Hide info, Use Key to view
+Encrypt and Decrypt
+
+Asymmetric Key- Two Keys (Private and Public Key)
+Keys are Mathematically related
+Public key- is public to anyone
+Private Key- Only person who created key has access to the private key
+
+Process
+Starts with Receiver
+
