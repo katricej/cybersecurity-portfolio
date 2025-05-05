@@ -62,6 +62,125 @@ Keys are Mathematically related
 Public key- is public to anyone
 Private Key- Only person who created key has access to the private key
 
-Process
+Assymetric Two Key Process
 Starts with Receiver
+Receiver creates a pair of keys (Public and Private) 
+The receiver sends the Public key and keeps the Private Key
+The Sender uses the Public key to Encrypt the message
+The Sender sends the Encrypted message to the Receiver
+The Receiver uses the Private Key to Decrypt the message 
 
+
+
+The States of Data
+
+Data at Rest- encrypted hard drives
+ EX: laptops containing sensitive information
+ 
+
+Data in Transit- use TLS encryption
+            --TLS Transport Layer Security - Protocol that ensures secure communication over a network, especially the Internet
+Safeguards data as it moves across Internet
+
+
+Data in Use- Currently being accessed/processed 
+Trusted Platform Modules (TPM)- Dedicated hardware chip used to secure hardware through integrated cryptographic keys
+
+Hardware security modules (HSM)- A physical Device designed to securely generate, store, and manage cryptographic keys
+
+
+
+Vulnerabilities- Flaws in software design allowing bypass of security or causing crashes
+“Weakness"
+
+Zero-Day Vulnerability- security weakness/flaw in software, hardware, firmware unknow to the vendor, developer, or anyone capable of mitigating 
+Vendor has no time to develop patch before attackers can exploit 
+  
+ Zero-Day Exploit- malicious code/technique specifically designed to take advantage of zero-day vulnerability 
+ “Zero Attack” 
+ Attacker leverages exploit to: Gain Unauthorized Access, Steal Data, Disrupt Systems(cause damage)
+
+Honeypot- fake system (decoy) to lure attackers 
+Purposely leave vulnerabilities open
+Appear Secure
+Monitored to identify Hacker
+ITS A TRAP
+
+Types of Honeypots
+Pure- used for monitor purposes
+Low- Interaction- Good against bots/automation
+High- Interaction
+
+Honeynet- fake networks for broader trapping 
+Looks like a real network
+
+Enumeration-  gather info about target
+
+Footprinting- Discover visible layout of the network and its security mechanisms 
+ Use “social engineering” or discarded info 
+ Collect infrastructure info, employees, & online presence 
+ NON-INTRUSIVE-  NOT actually probing the target 
+
+
+  
+ Fingerprinting- Uncover specific types devices/software 
+ Analyse port scans, server message analysis 
+ Identify system/software versions vulnerabilities 
+ Technical details; OS, software versions, configuration settings 
+ INTRUSIVE
+
+Denial of Service (DoS) -attack causes a service to become unavailable 
+Distributed Denial of Service (DDoS)- coordinated attacks launched by multiple hosts simultaneously 
+Overwhelm bandwidth 
+Overwhelm processing resource (flood state table)
+
+Botnet-Group of compromised hosts used to perpetrate DDoS/DRDoS 
+"Zombies"
+
+
+Malware- Harmful software disrupting or damaging system
+ Types of Malware 
+      Viruses/Worms
+      Trojan
+      PUPs/PUA
+
+
+Fileless Malware- Type of Malicious software that does not rely on files stored on disk
+Resides in RAM
+Sophisticated threat, no code on disk, hard to detect
+
+
+Spoofing- attacker disguises their identity or forgery on source info appears legitimate 
+ Someone disguises themselves as someone else to gain unauthorized access to information, systems, or networks 
+ Covers wide range different attacks… 
+  
+ MAC spoofing- attacker changes their MAC address value to a legitimate host, but must disable the legitimate host 
+  
+ IP spoofing- attacker changes their IP address value to a legitimate host 
+ Faking the IP address of another device to mask the attacker's location or identity 
+ Often used to mask the attacker’s origin 
+
+ ARP spoofing (ARP cache poisoning)- broadcast unsolicited (gratuitous) 
+ARP replies of legitimate host 
+Deceiving devices in a local network by linking the attacker's MAC address with the IP address of a legitimate network member 
+Usually masquerades the MAC address of default gateway by overwhelming the legitimate default gateway 
+
+ Email spoofing -send emails from forged email addresses to appear as if they come from known or trusted sources
+
+On-Path Attacks- attacker intercepts and possibly alters the communications between two parties without their knowledge 
+“Eavesdropping”  
+Generally called Man-in-the-Middle
+
+MAC Flooding- Overloads switch's CAM table with numerous packets of varying MAC addresses 
+Causes switch to fail and indiscriminately send traffic like a hub 
+TYPES:      Random MAC address flooding, Incremental MAC Address Flooding, and Targeted MAC Flooding
+
+VLAN Hopping- trick target switch into believing that attacker is a legitimate switch 
+Evade security that segregates/segments networks 
+Hopping from one VLAN to another, attackers can 
+Access restricted or sensitive areas of a network 
+
+Rogue Device & Services- Unauthorized hardware and software that connect to a network without permission 
+Unauthorized APs, modems, switches, routers, 
+SHADOW IT SERVICES
+Bypass official procurement processes 
