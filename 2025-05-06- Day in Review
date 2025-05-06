@@ -1,0 +1,85 @@
+AUTHENTICATION, AUTHORIZATION, AND ACCOUNT MANAGEMENT
+
+Authentication- type of data used to create a credential (data to “prove a claim”)
+ Factor types: 
+ “Something you KNOW” – password; PIN; answer question 
+ “Something you HAVE” – hard token; fob; driver’s license; smart card 
+ “Something you ARE” – biometric: iris; retina; fingerprint; voice pattern 
+ “Something you DO” – draw picture; signature on touchpad 
+ “Somewhere you ARE” – physical location; IP_address
+
+Single Factor Authentication (SFA) 
+ Authentication by one type of factor (weak) 
+  
+Two-Factor (Double or Dual factor) Authentication 
+Authentication by two different factors (better!) 
+Subset of MFA 
+  
+ Multi-Factor Authentication (MFA) 
+ Authentication by two or more factors (best!) 
+ Requires more pieces of evidence than 2FA to grant user access 
+
+ Single Sign-On (SSO)
+ Allow user to authenticate once to local device and authorized access compatible application servers without reentering credentials again
+ Access multiple apps with one set of login credentials
+Works by using Centralized Authentication Server (CAS)
+
+Central Authentication Server (CAS) 
+Centralized system that verifies user crendentials and control access to networked resources, applications, or services
+A Key component of Identity Access Management (IAM)
+Organizations can have hundreds or thousands of servers 
+Purpose is to Authenticate
+  Types: 
+ --Kerberos 
+ --Radius 
+ --TACACS+ 
+ --LDAP / Active Directory (AD)
+
+
+Kerberos
+Network Authentication Protocol designed to provide secure Authentication over an insecure network using secret key cryptography and a trusted third party
+"Tickets"
+Ticket Granting Ticket (TGT)
+Ticket Granting Service (TGS)
+
+Digital Certificates & PKI Digital Certificate 
+
+Digital Certificates- verifies/validate identity of ownership of online medium 
+ --issued after a background check by authorized 3rd party 
+
+Public Key Infrastructure (PKI)- used to create manage, distribute, use, store, and revoke Digital Certificates and Public-Private key pairs
+
+Certificate Authority (CA): 
+3rd-party validates certificates 
+Uses asymmetric encryption (public/private key pairs) 
+Builds trust between user and org (certificate holder)
+
+802.1X
+A Network Access Control Protocol that provides Port-Based Authentication to secure wired and wireless networks
+Controls whether a device can connect to a network by requiring authentication before access is granted
+Appliance (switch, AP, VPN gateway) authenticates client before network access
+Used to Authenticate a computer/device
+
+Remote Authentication Dial-in User Service (RADIUS) 
+Most widely used opensource standard for Central Authentication Server (CAS) 
+Provides AAA: Authentication, Authorization, & Accounting
+Combines all three phases of AAA
+UDP Port 1812/1813
+Only the Password is Encrypted
+
+Terminal Access Controller Access-Control System Plus (TACACS+) 
+Provides AAA: Authentication, Authorization, & Accounting
+Separates all three phases of AAA
+Encrypts entire body of packet with TCP port 49 
+Encrypts Username & Password 
+Not backwards compatible
+More Authentication requests and response codes
+
+Lightweight Directory Access Protocol (LDAP) 
+Allows users & apps to find info on people, files, software, devices, and organizations within network 
+Also used to authenticate users 
+“Directory Access Protocol” 
+Generally transmitted through the HTTPS 
+Use case: Storing Employee profile detatils (username/password) in database
+Can be used with Kereberos to create SSO
+Provides NO SECURITY; transmissions are in Plain Text
