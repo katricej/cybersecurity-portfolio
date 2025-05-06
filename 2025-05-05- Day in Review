@@ -184,3 +184,36 @@ Rogue Device & Services- Unauthorized hardware and software that connect to a ne
 Unauthorized APs, modems, switches, routers, 
 SHADOW IT SERVICES
 Bypass official procurement processes 
+
+Rogue DHCP Server Attacks -nauthorized DHCP server distribute incorrect network config parameters to clients
+DNS Attacks- targets DNS/ invalid mapping of domain name into IP addresses 
+
+ Social Engineering 
+ Deception; manipulative techniques 
+ Convince someone into revealing confidential info 
+       EX: Passwords, Financial details, Access credentials 
+ Exploit human vulnerabilities, not technical weaknesses 
+ “Hacking the Human”
+
+Phishing- social engineering over electronic communication 
+ Send fraudulent communication that appears to come from reputable source to steal sensitive Email / Website 
+ 
+Shoulder Surfing- Observe directly or use technology to watch someone enter personal information 
+
+Dumpster Diving- sifting thru trash to find confidential documents or information that can be used in further attacks 
+
+Tailgating / Piggybacking- Gain unauthorized entry into premises 
+       Tailgating – NO Consent 
+       Piggybacking - Consent
+
+
+
+Password Attacks 
+
+Definition- Attempts to obtain or bypass individuals' passwords using various methods
+
+Dictionary- Attacks Enters all dictionary words.  Targets weak, simple passwords
+
+Brute Force Attacks-Tries all character combinations
+       Time-consuming but cracks any password
+ 
