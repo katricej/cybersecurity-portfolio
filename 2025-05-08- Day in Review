@@ -1,0 +1,134 @@
+Authorization and Account Management
+Network Hardening
+Switch Security
+Network Security Rules
+
+Identity Access Management (IAM)
+Identity- "Claim" "Admin"
+Authentication- Prove a Claim
+Authorization- Rights and Permissions
+Accounting- Logging and Auditing
+
+Access Control Model 
+"Rights and Permissions"
+Principle that govern how authorization works to give rights and permissions 
+METHODS: 
+DAC 
+MAC 
+RBAC 
+Rule-Based AC
+Attribute-Based AC
+
+Discretionary Access Control (DAC) 
+Access control based on owner of a resource every resource has an owner 
+Owner (the Creater) has full control over the resource 
+Decides who has access/ how it can be shared
+Owner can modify the resource’s access control list (ACL) to grant rights to other users
+Resource Types:  File, Folder, Printer, Webpage, Database
+Owner can give read or write access to other user
+
+
+Role-based Access Control (RBAC) 
+Authorization is based on tasks the user or service must be able to perform 
+Set of rights/permissions 
+Each principal (user or service account) is allocated to one or more roles 
+Requires all access thru the role 
+User>>> Role >>>  Rights
+
+Privileged Access Management (PAM) 
+Approval Group for Admin
+Checks and Balances for Root & Admin
+ “Control  Elevated Access” prevent privileged account abuse 
+ Policies, procedures, and technical controls 
+ Prevent malicious abuse of privileged accounts 
+ Mitigate risks from weak config control over privileges
+Windows- Admin      Linux-Root
+
+
+Least Privilege  
+Granting users JUST ENOUGH Rights to perform their job and NO MORE
+
+
+ Separation of Duties  
+Establish checks and balances against possibility that critical systems or procedures can be compromised by insider threats 
+Divide tasks prevents ethical conflicts or abuse of power
+No Single individual has enough control or access to misuse a critical system or process on their own.
+Its a way to prevent fraud, errors, and insider threats by dividing responsibilities among multiple people
+"Checks and Balances" Each person is responsible for a different part of a process, so collusion would be required to bypass control
+
+
+
+Zero Trust
+"Never Trust, Always Verify"
+Verify then Trust
+Assume NO user, Device, or Application (Inside or Outside the network) should be trusted by Default.
+Assume Breach
+
+Implicit vs Zero Trust
+Traffic Light Example  (Implicit Trust)              Untrusted    Untrusted   Untrusted
+Untrusted    DMZ        Trusted                                ZERO TRUST!!!!!
+Red          Yellow      Green
+
+
+ Network Hardening
+
+ Perimeter security- firewalls, screened subnets, proxy servers, etc.
+ Create barrier at the network edge
+
+Defense in Depth
+Strategy to protecting assets from threats at multiple layers/levels instead of just one
+Security controls (countermeasures) are deployed throughout network
+If one layer is penetrated or is inadequate, another layer is in place to provide additional protection
+
+
+
+“Defense in Depth” strategy 
+  Comprehensive approach to protect an organization’s assets using  policies, procedures, awareness, and technical tools. 
+ Physical 
+ Perimeter 
+ Internal network 
+ Hosts 
+ Applications 
+ Data
+
+Hardening 
+ Apply secure configuration to each network host or appliance make each host & networking devices secure against tampering or abuse 
+ Each host and network device should be hardened.  
+HOW TO HARDEN DEVICES:
+Change default passwords  
+ Enforce password complexity/length requirements 
+ Configure role-based access 
+ Disable unneeded network services 
+ Disable unsecure protocols 
+ Remove unused applications 
+ Patch systems regularly
+
+
+Endpoint Security 
+ Securing endpoints/entry points of end-user devices (desktops, laptops, and mobile devices) from being exploited by malicious actors and campaigns 
+ Uses security procedures and technologies 
+ Endpoint security is enforced before the device can fully access the network
+
+ MAC Filtering 
+ Define which MAC addresses are permitted to connect to a particular port 
+ Create static lock list of valid MAC addresses 
+ Specify limit to number of permitted addresses 
+ 
+Dynamic ARP Inspection 
+ Validates ARP packets 
+ Intercept, log, and discard ARP packets
+
+Configure protection mechanisms (cont.) 
+ DHCP Snooping- protocol checks ALL DHCP info that passes thru switch 
+
+Neighbor Discovery (ND) Inspection & Router 
+Advertisement (RA) Guard 
+Switch inspects IPv6 packets with neighbor discovery messages 
+Validates them against DHCPv6 table
+
+Switch Security
+Disable Ports
+Mac Filtering
+DHCP Snooping - DORA (Offer and Acknowledge)
+802.1X/ NAC Network Access Control
+VLAN Security
