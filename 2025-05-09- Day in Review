@@ -1,0 +1,86 @@
+Zone Based Security
+
+Airgap
+Security measure that physically isolates a computer or network from unsecured networks
+Completely  cut off from the internet
+NO Wifi, NO cables, NO Bluetooth
+
+Demilitarized Zone (DMZ)
+Used to improve security of organizations network segregating devices
+Perimeter Network (Screened Network)
+Divides Network into two parts
+Firewall Protection is Forbidden
+
+Zone
+Area where all hosts in network have the same security config
+
+Screened Subnet 
+Use two firewalls placed on wither side of the perimeter network zone
+Protects the Intranet
+Always has two Firewalls
+
+Triple-Homed 
+FIREWALL/ROUTER appliance with three of more NICS
+Achieve same configuration as screened subnet
+
+
+Intrusion Detection System (IDS)
+Deployed on network close to perimeter 
+Passive System scans incoming traffic
+Sends alerts only
+
+Intrusion Prevention System (IPS)
+Actively Block or Prevent Intrusions
+Takes Action
+1) Inspection & Investigation
+2) Action- Put them in Quarentine or Simply drop them
+3) Sends alerts only
+
+
+IPS and IDS can be combined with other devices such as Firewalls, Routers, Proxy
+United Threat Management (UTM) and next generation firewalls are two examples
+
+Signature- Identifies unique fingerprint (signature)
+"Patch Matching"
+
+Anomaly-Based- Seeks anything outside baseline thresholds, alerts, logs, actions taken
+
+Internet of Things (IoT) 
+ Embedded Systems 
+Special computer that combines CPU, Ram, storage, and I/O for a dedicated function 
+System generally is static, which does not allow or require frequent changes 
+ Easier to protect and defend against threats 
+ Often overlooked by security personnel
+"Smart Objects"
+
+Electrically Erasable Programmable Read-Only Memory (EEProm)
+Memory chip store data permanently (even when the power is turned off)
+You can erase and Rewrite it with electricity, but not constantly like RAM
+
+
+Physical Access Control Systems (PACS) 
+ • network of monitored locks, intruder alarms, 
+video cams 
+  
+ Building Automation System (BAS) 
+ “Smart Buildings” 
+ Configures and monitors HVAC, fire control, power and lighting, elevators, escalators 
+ Can include PACS 
+  
+ Programmable Logic Controllers (PLC)
+ Used to implement PACS and BAS
+ Specialized computer designed to operate in industrial settings for automation & control 
+ Types Of PLCs: 
+ --Compact (fixed) PLC 
+ --Momodular PLC 
+ --Distributed PLC
+
+Geofencing 
+ Geofencing 
+ Technology creates virtual geographic boundary around area using location service 
+ Software triggers response when a mobile device enters or leaves a particular area 
+ Controlling device function (camera and video) 
+ Context-aware authentication 
+ Applications:
+ Creation of virtual perimeters around specific areas (EX: office properties) 
+ Restricts a device functions outside the area (Ex: camera use outside the designated area) 
