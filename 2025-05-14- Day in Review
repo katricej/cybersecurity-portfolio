@@ -1,0 +1,172 @@
+Wireless Security
+Wireless Troubleshooting
+
+
+Wi-Fi 
+Uses similar frame and MAC as Ethernet
+Characteristics:
+Logical star topology
+Can easily add hosts without increasing administration
+AP easily connected to a wired network, allowing clients to access both wired and wireless hosts
+Placement and configuration of APs require planning to implement effectively
+
+
+
+Service Set Identifier (SSID)
+“Network Name” that wireless devices use to connect to a WLAN
+It groups wireless devices together into the same logical network
+32 byte unique character string identifies AP
+Transmitted in the beacon frame and probe response frame
+SSID sometimes called ESSID or BSSID; however, they are technically different
+SSID often contains name of manufacturer and even AP model number
+Disguise the nature of the network identified by SSID to avoid providing hacking
+ Example: Accounting Department SSID = “Acctg"
+
+
+ Basic Service Set (BSS)
+ Group of stations (STA) sharing an Access Point
+ Defines most basic infrastructure (“CELL”)
+ Devices in BSS use same frequency channel
+ • STA (station)
+ Wireless NIC in end device (laptop, PDA, smartphone)
+ STA often refers to the device itself, NOT just the NIC
+ BSSID (Basic Service Set Identifier)
+ Virtual MAC address derived from AP’s radio
+ Uniquely identifies APs within a WLAN
+ 48-bit unique identifier for the group of stations that share an AP
+ BSSID and SSID are not the same thing
+
+
+ Extended Service Set (ESS) and Extended Service Set Identifier (ESSID)
+
+Extended Service Set (ESS)
+ Multiple BSSs with Distribution System (DS)
+ 
+Extended Service Set Identifier (ESSID)
+Network name for multiple BSSs within larger WLAN 
+Group of BSSs configured with same SSID and security information
+Allows a seamless network experience across multiple BSSs (“roaming”)
+Represents all BSSs under one network name
+Uses the same format as SSID
+
+Range and Signal Strength
+Range and signal strength play in Wi-Fi connectivity
+
+ Wi-Fi Range
+ Indoor range ~ 30m (100ft)
+ 2.4GHz has greater range than 5GHz
+ 802.11n + has greater range than older standards
+
+ Dynamic Rate Switching (DRS)
+ Adjusts data rates based on signal quality
+ Strong signal receives higher available data rate
+ Weak signal receives reduced data rate
+ "The BETTER the signal, the FASTER the data moves"
+
+
+Interference and Obstruction
+ Solid objects and electronics REDUCE signal
+ Thick walls, dense concrete, metal construction Fluorescent lights, microwave ovens, cordless phones, industrial equipment
+
+
+Signal Strength
+Ratio of a measurement to 1 milliwatt (mw)
+Measured in decibel (dBm)
+BETTER= Closer to 0 dBm 
+IDEAL = -30 dBm
+Good = -65 dBm 
+PACKET LOSS = <-80 dBm
+
+
+ Received Signal Strength Indicator - RSSI
+Strength of a signal received by device from wireless source
+ EX: How much power reaches a device from the signal
+ Measured as a negative number; a smaller value indicates a stronger signal
+ Use to measure signal strength at a given distance from the AP
+ Device constantly checks the RSSI to gauge signal strength
+ The stronger the signal, the better the connection
+ RSSI: CLOSER to 0 dBm = BETTER
+
+ Signal to Noise Ratio - SNR
+ compares level of signal strength and background noise
+ Ratio of signal power to noise power
+
+Noise
+ Unwanted signal
+ Measured in dBm
+ A number closer to zero is NOT GOOD
+
+
+Signal to Noise ratio
+ Higher values = clearer signals
+ SNR higher than 1:1 indicates more signal than noise
+ Farther a receiver is from the transmitter, the lower SNR
+ If signal falls below noise floor, connectivity is lost
+
+
+Heat Maps
+ Show areas with a STRONG signal in GREENS and YELLOWS 
+WARNING- ORANGES and REDS where signal strength drops off
+ Visual representation of data
+ Values depict color showing signal strength intensity in area
+ Spectrum analyzer– measures wireless signal quality
+
+
+Wireless Roaming
+ Roaming
+Device connection across APs without disconnects
+STA  (station) moves from one BSS (Basic Service Set) to another within the ESS(Extended Service Set)without losing connectivity
+
+
+ 802.11r 
+Also Known As Fast BSS Transition (FT) 
+Standard that speeds up roaming between access points on the same network
+“Fast Roaming”
+
+
+Scanning
+ Device periodically surveys surroundings for AP
+ Methods:
+ 1. Active scanning
+   Probe Request- STA initiates by sending special frame
+   Probe Response- AP sends info STA needed to associate
+ 2. Passive scanning
+   Beacon frame- AP advertises presence by sending special signal with information STA needs to associate
+
+Wireless Distribution System (WDS)
+Wireless Only Networks
+Allows wireless networks to be extended using multiple access points without needing to connect them via a wired backbone
+Allows Wireless Bridging (AP to AP communication)
+Helps extend WIFI coverage in areas where running cables is difficult
+
+Characteristics of WDS:
+All APs have same channel, SSID, and security settings
+All APs are configured in WDS/repeater mode
+One AP set as base station
+The other remote APs set as remote STA
+Remote AP STAs forward all traffic to base station
+Base station can be connected to cabled segment
+No remote STAs will connect to cabled segment
+
+
+ Hub-and-Spoke
+ Centralized management and monitoring of APs
+ Typically connects all APs thru wired link
+ APs do not communicate directly with one another only thru the controller
+
+
+Antenna use
+Wireless signals travel without guidance
+Whereas, wired signals are provided with fixed signal path
+Wireless signals originate from electrical current traveling along a conductor
+This electrical current travels from the transmitter to an antenna
+Antenna emits the signal as a series of electromagnetic waves into the atmosphere
+Another antenna (at destination) accepts signal and receiver converts back to current
+Two antennas must be tuned to the same frequency in order to use the same channel
+
+
+AD HOC
+Small number of STAs closely positioned transmit directly to each other
+ Works in peer-to-peer mode without Access Point
+ Wireless NICs in STAs communicate directly with one another
+
