@@ -1,0 +1,247 @@
+   Authentication 
+Process of comparing & matching user’s credentials with the credentials in a database
+
+Authentication for WIFI -Prove an identification
+Shared (Pre-shared) key - Pass Phrase
+    OR 
+Enterprise:
+RADIUS  UDP 1812 & 1813
+TACACS+  port 49
+LDAP  port 389
+Kerberos port 88
+
+ Hashing (INTEGRITY)
+  Confirms data has NOT been changed (integrity)
+  No denying you sent/sighed message (nonrepudiation)
+  Irreversible – “there is no-de-hashing”
+  This means – “one-way process only”
+
+Hashing Algorithms
+ MD5–message digest 5 (128-bit)
+ SHA – Secure Hash Algorithm
+ SHA1-1, SHA-224, SHA-256, SHA-384, SHA-512
+
+Digital Signature
+Electronic, Encrypted, Stamp of AUTHENTICATION
+Signature confirms that data originated from the signer and has not been altered
+To send a digital sign document, you also send a digital certificate and public key (get from Certificate Authority CA)
+Purpose:
+1)  Authentication
+2)  NonRepudiation- sender can't deny sending the message later on
+3)  Integrity- Message not altered
+
+Symmetric Key Encryption”; “SECRET KEY”
+Single key used for both encryption and decryption
+Sender and receiver have identical copy of key
+
+How do you share the “secret key”???????
+ Physical- telephone call, letter, post-it note, USB drive
+ Public/Private key exchange
+ 1. Alice signs pwd (plaintext) with Alice’s private key - (hash)
+ 2. Alice encrypts [pwd+hash] with Bob’s public key - cipher
+ 3. Bob decrypts cipher using Bob’s private key - [pwd+hash]
+ 4. Bob uses Alice’s public key to create hash and compares this result with the hash that came from the cipher 
+
+
+Public Key encryption for Confidentiality and Authentication
+Public key encryption for confidentiality:
+ -Sender encrypts with receiver’s public key
+ -Receiver decrypts with receiver’s private key
+
+Public key encryption for authentication:
+-Sender encrypts message with sender’s private key
+-Receiver decrypts message with the true party’s public key
+
+Preshared-key  PSK
+EX: Password that is shared with the client and the Access Point (AP)
+
+
+
+Wi-Fi Encryption Standards
+
+WEP, WPA, WPA2, WPA3 are ALL private key ciphers
+
+ Wired Equivalent Privacy (WEP)
+ Uses cipher not suitable for secure wireless
+ NEVER USE!!!!!!
+Easily Hackable
+RC4
+40 Bit Key length
+
+
+ Wi-Fi Protected Access (WPA)
+ Intended as intermediate measure to replace WEP while 802.11i fully developed
+ Temporal Key Integrity Protocol (TKIP) for encryption
+RC4
+128 Bit Key length
+Don't Use!!!!!
+ 
+ Authentication Support - both:
+ Pre-shared key (WPA-PSK or WPA Personal)
+ 802.1x (WPA Enterprise) authentication
+ Can use pre-shared keys or dynamic keys
+
+ Wi-Fi Protected Access 2 (WPA2)
+ Wireless security adheres to 802.11i specifications
+ Built on theory of Robust Secure Networks (RSN)
+ Intended to replace WEP and WPA
+• Characteristics
+ Advanced Encryption Standard (AES) for encryption
+ Similar to TKIP but requires special hardware
+ Counter Mode with CBC-MAC Protocol (CCMP)
+ Also known As -  AES-CCMP
+ 4-way handshake
+1328 bit key length
+
+Wi-Fi Protected Access 3 (WPA3)
+Introduced in 2018 to address the limitations of WPA2
+Provides cutting edge security protocols to the market
+Adds new features to simplify WiFi security
+ Characteristics:
+ Protected Management Frame (PMF)
+ All “Management” frames (EX: Beacon, Probes) encrypted
+ AES-CCMP and newer GCMP-256
+ Individualized data encryption for each device
+ Simultaneous Authentication of Equals (SAE)
+ Improved key exchange method
+ Change handshaking method; block brute-force/MiTM
+ Perfect Forward Secrecy
+ Can’t decrypt prior captured data when attacker learns password - ONLY Newly captured data can be decrypted
+
+ Captive Portal
+ Act as a secondary authentication step in Open 
+ Authentication or guest Wi-Fi networks
+ Requires users to authenticate through a web page
+ “Splash Page” for login- Web page that appears before main content
+ Use HTTPS with TLS
+ Digital certificate issued by Certificate Authority
+ It's like a checkpoint before the Internet gate opens
+
+Rogue Access Points
+ Definition
+ Evil twin: Fraudulent Wi-Fi AP mimicking a legitimate network
+ Users unknowingly connect, allowing attackers to intercept data
+
+Deauthentication Attacks
+ Definition
+ Disrupt connections between users and Wi-Fi access points
+ Attackers force devices to lose access and then reconnect to a network they control
+
+ Purpose:  
+ Disrupt communication
+ Detection and Prevention
+ Attackers track connections, capture data, trick users into installing rogue programs
+
+Roaming
+The connection is not disconnected when moving from one coverage area to another
+
+Flapping Clients:
+Devices constantly switching between APs, causing unnecessary load and potential network disruptions
+
+Roaming Standards:
+Lack of support for 802.11k, 802.11r, and 802.11v standards
+
+
+ Disassociation
+ Used to notify other party that connection is ended
+
+ Send forged frames to AP or client device causing disconnection
+ “Deauthentication Attack”
+ Spoof target’s MAC address then make AP disconnect target
+ Management frames are transmitted w/o encryption
+ Target assumes frames legit and disconnects; prevents reconnect
+ Can also be done to all connected STAs
+
+WAN and LAN
+
+WAN
+Owned and operated by Telcos (telecommunications carriers)
+Also Known As NSPs (Network Service Providers)
+EX: AT&T, Verizon, Charter, and Comcast
+Data communication over large distances, often using public networks
+
+LAN
+Mostly owned\operated by the organization
+Wiring is privately owned
+Cover shorter, localized areas
+
+Enterprise WAN
+Network for a single organization spanning large geographic areas
+Uses public telecom infrastructure for wide reaching connectivity
+
+
+ WAN site
+ A specific geographic location or endpoint connected by WAN
+
+ WAN Link
+Connection between one WAN site (endpoint) and another site
+ Link type:
+ Point to Point -One site to only one site 
+ Multipoint -One site to two or more other sites
+
+Virtual Circuit (VC)
+WAN connection logically appears to be dedicated but, physically may have any configuration thru the Telco’s cloud
+
+Demarcation Point (“Demarc”)
+Local Exchange Carrier (LEC) installs a physical cable and a termination jack onto premises
+Demarc: marks the boundary between the telco equipment and the organization's network or telephone system
+Characteristics:
+Generally, LEC responsible for all equipment on one side of the demarc
+Customer is responsible for all equipment on the other side of the demarc
+Demarc also called Minimum Point of Entry (MPOE) or End User Point of Termination (EU-POT).
+The demarc is typically located on the bottom floor of a building, just inside the building for residential service, the demarc often a small box on the outside of the house
+
+
+
+T-Carrier and Leased Line Provider Links
+ T-1 Carrier System
+ T-1 is dedicated logical digital standard developed by Bell Labs
+ Created to allow multiple calls on a single cable  
+ Dedicated Leased Line
+ 1.544 mbps
+
+ Types of T-carrier lines
+ T1
+ Connects branch offices, connects to carrier
+ T-carrier standards (T-CXR standards) uses TDM (Time Division Multiplexing) over two wire pairs to divide a single channel into multiple channels
+ Multiplexing enables single T1 to carry 24 channels
+
+ T3
+ Provides 28 times more throughput than a T1
+ More expensive than T1s
+ Used by more data-intensive businesses 
+
+Fractional T1
+Allows organizations to use only some of the channels on a T1 line
+Charged according to the number of channels they use
+
+Cable
+Cable TV connection creates a wide area connection to Internet
+Cable modem (router) connects computer device to cable network for sending networking signals
+Same cable line carries networking and cable TV signals
+In some cases a separate line is installed for internet access
+
+
+
+Fiber to the Curb
+ Fiber to the X (FTTx)
+ Generic term for any broadband network design using optical fiber in all or part of the local loop’s  last mile
+ Fiber optic link used in some or all of local loop’s “last mile” 
+ Examples:
+ Fiber to the Network – “FTTN”: Fiber terminated in Street cabinet that could be a few miles away
+ Fiber to the Curb – (FTTC): Fiber terminates within 300 yards of customer premises
+ Fiber to the Premise – (FTTP): Blanket term of FTTH & FTTB
+ Fiber to the Building– (FTTB) Fiber terminates at building; typically a multi-unit
+ Fiber to the Home– (FTTH)- Fiber terminates at home/org
+
+
+Metro-optical Provider Links
+ Carrier Ethernet / Metro Ethernet
+ ISP offers Ethernet leased lines over WAN network
+ Metro-optical Ethernet
+ limited to a single city
+
+
+
+
+
