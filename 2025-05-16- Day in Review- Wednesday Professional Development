@@ -1,0 +1,191 @@
+Remote Network Access
+VPN
+
+Virtual Private Network
+Setup  a secure network inside another network
+Network connection Encrypted from End to End
+VPN often called "Tunnel"- Method encapsulates each Packet into new (Often Encrypted) Packet
+Tunneling- Virtual Point to Point Connection
+
+VPN Process: 1) Create Tunnel  2) Encrypt
+
+Advantages:  
+Annominity on Web
+Able to Access Content
+
+VPN Server
+Assign IP Address (not your personal IP address but the VPN server IP Address
+VPN encapsulates the data with an extra layer of protection
+Enable you to access RESTRICTED internet content
+Provides a secure connection for remote workers
+Like a Proxy
+
+Tunneling Protocols- PPTP, L2TP, SSTP, IPSec
+
+
+Site To Site VPN
+Connects two or more networks together securely over the internet
+Used by Businesses with Multiple Office Locations
+EX:  Company connects its NY and London offices as if they're on the same local network
+
+
+Client to Site VPN
+Uses a VPN client (app) on the users device to create a secure connection to a VPN server
+Also called SSL VPN or Personal VPN
+
+Hub and Spoke
+Common Network Topology used in VPNs especially Site To Site VPNs
+Hub= The central VPN server or Main site
+Spokes= Remote sites or branch offices that connect to the Hub
+
+Commercial VPN 
+VPN for personal use Remote
+Based on the Remote Access VPN
+
+
+Point-to-Point Protocol (PPP)
+Encapsulates higher-layer packets at Data-Link layer
+IP packets for serial digital lines
+Support several types of Network layer protocols
+Provides NO security mechanisms (must use other protocols to provide security)
+
+
+Point-to-Point Tunneling Protocol (PPTP)
+Microsoft protocol once very widely used
+Used with PPP to provide security
+Has too many security flaws to be deployed safely
+
+ Generic Routing Encapsulation (GRE)
+ Works at Layer 3
+ Encapsulate PPP, IP and other protocol as the payload
+ IP Source Address and Destination Address GRE header, Payload
+
+
+
+
+ Internet Key Exchange (IKEv2) / IP Security (IPSec) 
+ Best protocol for Mobile devices
+ IPSec works at Layer 3
+ Does not provide encryption by itself; uses IPSec
+
+IPv6 uses IPsec (Encryption)
+Comes with built in security if you enable it
+Network Layer 3
+
+Layer 2 Tunneling Procol (L2TP) / IP Security (IPSec)
+Broad compatibility with older devices
+IPSec works at Layer 3
+Combines PPTP and L2F (layer 2 forwarding protocol)
+Does not provide encryption by itself; uses IPSec
+
+
+ Transport Layer Security (TLS) /  Datagram Transport Layer Security (DTLS)
+ Secure tunneling with certificates (EX: SSTP)
+ Typically accessed thru web browser
+ Encapsulate FRAMES or IP packets
+ Functions at Session Layer; but adds significant overhead
+ Transport layer security over TCP; Datagram TLS over UDP
+Reminder- TLS Port 443 and think browsers when referring to TLS
+
+
+Secure Socket Tunneling Protocol (SSTP)
+Sole development by Microsoft protocol; CLOSED source
+Limited compatibility with other OSs
+Relies on SSL/TLS for encryption
+Developed as upgrade from PPTP and L2TP/IPSec
+
+
+IPsec
+Encryption protocol suite that defines rules for Encryption, Authentication, and Key Management for TCP/IP transmissions
+IPv4 enhancement; auto imbedded in IPv6, operates at Network Layer
+Adds security to IP headers and encrypts data payload
+Requires regular re-establishment of a connection and is used with any type of TCP/IP transmission
+
+IPsec Two Modes
+
+Transport mode- secure communication b/t two hosts
+ “End-to-End”
+ Client To Client
+
+Tunnel mode
+ Runs on routers/other devices
+ Communication between VPN gateways across unsecure network (Internet)
+ “Router Implementation”
+
+
+
+ Internet Key Exchange
+ Part of IPSec that defines automatic method of negotiation and authentication
+
+
+
+Split Tunnel- Remote client manages any Non-local traffic
+Full Tunnel VPN Gateway manages ALL remote client traffic 
+
+
+
+Clientless VPN 
+Allows access to network resources via web browser
+Does not need dedicated VPN client software
+Uses HTML5's canvas element and WebSockets
+
+
+
+ Remote Access
+ Extend LAN over an intermediate public network (“Internet”)
+ Remote system “joins” the LAN
+ Enables remote control of computers and network devices
+ Also known as “Remote Host Access"
+
+
+Secure Shell Servers and Terminal Emulators
+
+SSH
+ Remote access to servers and network equipment
+
+ Terminal Emulator/application
+  Software that emulates a video screen or display
+  Can run on the same host or remotely
+
+ Secure Shell
+ Secure terminal emulation over port TCP/22
+ Connect to Linux, Switches, Routers, Firewalls
+ Tunnel other traffic over SSH (secure file transfer)
+ 
+SSH Server
+SSH Server public/private key pair (“Host Key”)
+Used to setup secure channel for the client to authenticate
+
+SSH Client
+Authentication Methods:
+User name/Password (local database or server)
+Public key authentication (User’s Public Key)
+Kerberos – special TGT system
+Ensure secure management of keys
+
+
+ Telnet
+ Protocol and terminal emulation sftw tool
+ Assists the execution of remote commands and data
+ Port 23
+ Plain text/ NO SECURITY!!
+
+
+Remote Desktop Protocol (RDP)
+GUI remote administration 
+Port TCP/3389
+
+Out-of-Band Management (OOB)
+Dedicated connection (wired/wireless) between host and network device (e.g. router, switch, firewall)
+Used for secure device administration
+
+
+Jump Box (Server)
+Intermediary server securely manages access to other servers and devices in screened subnet/cloud network
+Acts as an entry point
+Secure computer that acts like a Gate keeper to access other computers on a private network
+
+Jump Box Server Steps/Process:
+1)  Connects to Jump Box Server - usually through SSH or Remote Desktop
+2)  From the Jump Box Server you can safely access other servers inside the network
+3)  It adds a layer of Protection Attackers can't go straight to important systems
