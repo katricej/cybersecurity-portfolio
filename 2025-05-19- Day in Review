@@ -1,0 +1,134 @@
+Virtualization
+Datacenter and Storage Networks
+Cloud Concepts
+
+
+Virtualization
+Logical (Virtual) version of something Real (Physical)
+Creates virtual versions of computer resources
+Advantages:
+Diverse OS
+Isolation 
+Legacy Apps
+
+Virtual Machine (VM)
+ALso known as "Guest"
+Software emulates a computer that runs in an isolated part of the physical computer
+Disadvantages:
+Consume a lot of disk space
+Slow to startup
+Consume a lot RAM and CPU Power
+Requires a license for each OS
+
+Host- Physical computer running "Hosting" the virtual machine
+
+Hypervisor
+Creates and manages VMs 
+All VMs on a single host share the same CPU, hard disks, memory NIC
+
+
+Type 1 Hypervisor
+"Bare Metal"
+Functions like an OS
+XenServer (Citrix), ESX: (VMware), Hyper-V (Microsoft)
+
+Type 2 Hypervisor
+"Hoste"
+Not as powerful, Not as secure, and Not as fast as Type 1 Hypervisor
+Dependent on Host OS
+For testing purposes/Learning
+Client Hyper-V, Virtual Box, VMware Player, Linux KVM
+
+
+
+
+Virtual Servers and Virtual Networks
+
+Virtual Servers
+Multiple Server OS instances run on single Physical host
+EX:  DHCP, file, Web Services
+
+Virtual Networks
+Allow virtual servers/desktops to communication
+Host allows the virtual network to communicate with network devices out on the Physical Network
+
+Virtual Switch
+Allow multiple virtual servers and/or desktops to communicate on virtual network segments and/or the Physical network
+Logical decvice works at the DataLink Layer (vSwitch)
+
+
+Container
+Virtualization software run apps and dependencies is an isolated cell
+An application that's been packaged with all the files, configurtaions, dependencies neccessary for it to run
+Virtual version of apps.  They're Fast!!
+Containers only contain applications (No VM)
+Advantages:
+Microservices
+Rapid Development and Deployment (Speed)
+Resource Efficiency
+
+Container Engine
+Unpacks the container files and hands them off to the OS Kernel
+The leading software that is used to Create, Manage, and Run containers is Docker
+Docker- Opensource software, Container virtualized operating system
+
+DataCenters
+Dedicated location for hosting server infrastructure
+Key Components:
+Routers, Switches, Firewalls, Storage Systems, Servers
+
+Traffic Flow
+North-South Traffic- Traffic going TO and FROM Datacenter
+East-West Traffic- Traffic going BETWEEN servers in Datacenter
+
+Spine and Leaf Topology
+Two-Layer Network Topology 
+Spine Layer backbone of Top-Tier distribution switches
+Leaf Layer- All access switches connect to every spine
+
+
+Storage Area Networks
+
+Direct Attached Storage (DAS)
+Storage directly attached to Host
+Low Cost, Low Maintanence
+Suitable for Small Businesses that share data locally with little IT support
+
+Network Attached Storage (NAS)
+Storage Connected to production
+Allows local and network access  
+Redundant Array of Independent Disks (RAID)
+A data storage technology which uses striping, mirroring or parity to store data
+Combines multiple physical disks into a single logical unit
+TYPES: 0,1,5.10
+Raid 0- No Fault Tolerance, If fail occurs 
+Raid 1- Is Fault Tolerance. Each disk has the same data. Data is copied on more than 1 disk
+Raid 5- Requires 3 or more disks. Data is striped across multiple disks along with PARITY- used to rebuild data
+Raid 10- ( 1+0 combined)- Use minimum of 4 disks. Can only use 50% of data storage
+
+
+Fibre Channel (FC)
+High speed network technology mainly used to connect data storage systems
+Transfer Sensitive Data
+Designed Specifically to support SAN
+FC switches do not require IP Address
+Transmit all frames in order
+
+Interact Small Computer System Interface (ISCSI)
+SCSI data is transmitted over IP-based network
+Alternative to Fibre Channel
+Does not require FC specific switches and adapters
+
+Cloud Basics
+Cloud- Synonym for the Internet
+Cloud computing is software, Data Access, computation and storage services provided to clients through the Internet
+
+Scalabilty- Ablilty to increase workload size by adding resources
+
+Elasticity- is Automatically adjust and allocate computing resources on demand
+Automatic scaling
+Cost effectiveness (Pay what you use)
+Real Time Responsiveness
+
+Public Cloud
+Multi-Tenant Cloud service offered over the Internet
