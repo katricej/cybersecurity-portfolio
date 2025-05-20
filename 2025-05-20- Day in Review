@@ -1,0 +1,120 @@
+Cloud Service Models
+Cloud Categories 
+
+Traditional 
+All Hardware, Software and everything else is located and managed at the organizations location
+No need for Internet services
+
+Infrastructure as a Service (IaaS)
+Hardware and network infrastructure devices are provided virtually 
+Customer responsible for managing apps, data, runtime, middleware, and OS
+User gets: Raw computing resources
+You Manage: Your app platform and everything in between 
+EX:  AWS EC2m Microsoft Azure VMs, Google Compute Engine
+
+
+Platform as a Service (PaaS)
+Delivers everything a developer/programmer needs to build an application on the cloud infrastructure
+User gets: A platform to build and run their own apps
+You manage- Your App and Data ONLY
+EX:   Google App Engine, AWS Elastic Beanstalk
+
+Software as a Service (SaaS)
+Delivers software applications to the client either over the Internet or on a local area network
+EX: Office 365, Gmail, Google Docs, Zoom
+
+Cloud Connectivity Options
+Internet- use the CSP website or application program interface
+Virtual Private Network (VPN)- use VPN for better security and congestion control
+Direct/Private connection/ co location (Co-Lo) with datacenter
+Large datacenter rents out rack space to 3rd parties
+Direct link between organizations servers and cloud servers
+
+
+Cloud Computing
+Refers to data and applications being stored and run on the cloud rather than on your local computer 
+Cost Reliability, Scalibility (Pay as you go), Elasticity, On Demand, Multi-Tenancy
+
+Cloud Providers
+AWS Amazon Web Services #1 Cloud provider, Biggest vendor Netflix
+Microsoft Azure
+Alibaba
+IBM
+
+Types:
+Iaas, Paas, Saas
+
+
+Resources:
+Computing
+Storage
+Network
+Software
+
+
+Issues/Risks
+3rd Party Control
+Vendor Lock-In
+Data Security/Privacy
+Malicious Attacks
+
+Deployment Models:
+Public
+Private
+Hybrid
+Community
+
+Content Delivery Network (CDN)
+Makes websites load faster by bringing the website content closer to the user
+Reduces the cost of network Bandwidth 
+Content Availability and Redundancy
+
+Cloud Responsibility
+Security OF the cloud - CSP responsible
+Security IN the cloud - Client
+
+
+Network Function Virtualization (NFV)
+Software implenmentations decouple the network function from proprietary hardware
+Used to Configure
+Seperating software from Hardware
+Instead of using Physical devices (like routers, firewalls, or load balancers).  You run them as Software on regular computers
+
+Virtual Private Cloud (VPC)
+Multi-Tenant model provides isolated environment within a public cloud
+"Datacenter" in the cloud
+Combines Public and Private cloud
+Amazon= VPC
+Azure= Vnet
+
+Public Subnet
+Requires attaching an Internet gateway and configuring it as the default route 
+Instances will be assigned public IP address
+
+Private Subnet
+Generally Back-end servers
+Remains private without a default Internet Gateway
+
+Internet Gateway
+Route instance traffic with other subnets within the same VPC, subnets in another VPC, or the Internet
+
+NAT-Gateway
+Allows instances to connect out to Internet but not connections initiated from Internet
+
+Cloud Gateway
+Both Internet Gateway and NAT Gateway use NAT 
+Internet Gateway is a two-way gateway and VMs are associated with public IP
+NAT gateway is One gateway (Out bound) without VMs requiring public IP
+
+Cloud Firewall
+Barrier between cloud resources external threats
+Characteristics:
+Layer 3 (Network)- Accept/Deny traffic based on IP addresses and TCP/UDP port filtering
+Layer 4 (Transport) - Stateful inspection of connections using rules to allow established/ related traffic
+Layer 7 (Application) - Parsing Protocol headers/payloads for content-based filtering
+
+Software Defined Networking (SDN)
+Software Based Controllers of API to communicate
+Uses dedicated hardware devices (EX: routers, switches) to control network traffic
+Central Brain (Software) tells all devices what to do 
+SDN means controlling a network using software instead of hardware
