@@ -1,0 +1,190 @@
+PYTHON
+
+Program
+Set of instructions that a computer follows to perform a task 
+Commonly referred to as “Software"
+
+Machine Language
+“Code” Only understood by computers
+Expressed as a pattern of binary numbers (1 or 0)
+Is normally displayed in hexadecimal form - hex (easier to read)
+NOTE: computer’s native language is Machine/Assembly language dependent!
+
+Higher Programming Languages
+Any programming language that enables development of a program in a much more user-friendly programming context
+ Characteristics:
+ ▪ less memory efficient than lower-level languages
+ ▪ easy to understand
+ ▪ debugging is easy
+ ▪ simple to maintain
+ ▪ portable
+ ▪ often machine independent
+ ▪ needs compiler or interpreter for translation
+ ▪ widely used for programming
+ ▪ C++, Pascal, Java, Python, Perl, JavaScript, R, PHP
+
+Compiler
+ Translates high-level language program into machine language
+ Translates entire high-level program statements (ALL AT ONCE) into machine code, before the program actually runs
+
+Interpreter
+Translates each high-level program statement, ONE BY ONE, into machine code, as the program runs
+
+ Pseudocode
+ step-by-step description of an algorithm
+ “Fake Code”
+ Uses simple language text as it is intended for human understanding rather than machine reading
+ Has no syntax rules and not meant to be compiled or executed
+
+ Flowchart
+ Diagram graphically represents the steps that take place in a algorithm
+ Tool that programmers use to design programs
+
+Python
+Dynamic, high-level, free open source, and interpreted programming language
+Characteristics
+ ▪ free and open source \ available to everyone
+ ▪ easy to code \ easy to learn and use
+ ▪ easy to read \ expressive language
+ ▪ interpreted language – execute one line at a time
+ o easy to debug
+ o portable to other languages
+ ▪ cross-platform
+ o runs equally on different platforms
+ o Windows, Linux, Macintosh, etc.
+
+ Using .py file
+ For complex programs with many lines of code, console is not the best option
+ • use a text editor, create the code, and save file with .py extension
+ Example:
+ ▪ Enter command prompt
+ ▪ Type: notepad testprogram.py
+ ▪ Type: print(‘Hello’)
+ ▪ Type: py testprogram.py
+ ▪ The output is:  Hello
+
+Color Coding
+ Python Shell and editor coloring scheme
+ Python keywords are displayed in Orange
+ Comments are displayed in Red
+ String literals are displayed in Green
+ Defined names, such as the names of functions and classes, are displayed in Blue
+ Built-in functions are displayed in Purple
+
+Case sensitivity and Variables
+Python is case sensitive
+
+ Indentation
+ • Refers to the space at the beginning of a code line
+ • Other languages use indentation for the purpose of “readability”
+ • Python indentation is VERY important
+ ▪ Uses indentation to define a block of code
+ ▪ Coder MUST be aware of white space at the beginning of each line
+EX:
+if 5 > 2:
+ print(“Five is greater than two!") <---This works
+if 5 > 2:
+print("Five is greater than two!”) <---This will not work
+
+Automatic Indentation
+ IDLE editor features help to maintain consistent indentation
+ The most helpful feature is: automatic indentation
+ 4 spaces is the standard width for Python indentation
+
+ Input
+ ANY data that the program receives while it is running
+ Program receiving data will usually process it by performing some operation
+ The result of the operation is sent out of the program as output
+ Steps
+ 1. Input is received
+ 2. some Process is performed on the input
+ 3. Output is produced
+ A common form of Input is data typed on a keyboard
+
+ Displaying Output with “print” Function
+ Function - piece of prewritten code that performs an operation
+ Block of code which only runs when it is called
+
+
+
+print Function
+ • built-in function that displays output on a screen
+ • Format:   print(‘text’)  
+
+Where quotes specify beginning and end of text
+ Example: 
+print(‘Hello world’)
+
+ Example: 
+print(‘Herman Munster’)
+print(‘1313 Mockingbird Lane’)
+ print(‘Mockingbird Heights, GA 66666’)
+
+
+
+ String and String Literals
+ String - a sequence of characters that is used as data
+ String Literal -string appears in the actual program code
+ In Python
+ ▪ string literals MUST be enclosed in quote marks (begins and ends)
+ ▪ single-quote marks (‘) or set of double-quote marks (“)
+
+ Example: print(‘Don’t fear!’)
+ print(“I’m here!”)
+ • Example: print('Your assignment is to read "Hamlet" by tomorrow.')
+
+ Comments
+ When the Python interpreter sees a # character, it ignores everything from that character to the end of the line
+ Programmers commonly write end-line comments in their code
+
+Variables
+ A name that represents a value stored in a computer’s memory
+ Programs use variables to access and manipulate data stored in memory
+ The moment a value is assigned, the variable is created in memory
+ You cannot use a variable until you have assigned a value to it
+Reserved Words
+Cannot use one of Python’s key words as a variable
+Example:  (print, else, if, input, def) are built-in functions
+
+
+
+ Numeric Literal
+ Number that is written into a program’s code
+ 
+Types
+ 
+int – means integer
+ Numeric literal written as whole number with no decimal point
+EX:. 1, 124, -9
+
+Float – real number
+Numeric literal written with a decimal point
+EX: 1.5, 3.14159, 5.0
+
+str Data Type
+Python uses str data type to store strings in memory
+Example: # create variables to reference two strings
+ first_name = ‘Volodymyr’
+ last_name = ‘Zelenskyy’
+# Display the values referenced by the variables.   print(first_name, last_name)
+
+
+Performing Calculations
+Python has numerous operators that can be used to perform 
+Mathematical calculations
+Basic Algebra I and Algebra II
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
