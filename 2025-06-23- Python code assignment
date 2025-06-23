@@ -1,0 +1,90 @@
+FUNCTIONS 
+YOU MUST USE FUNCTIONS 
+ 
+ 
+1.Kilometer Converter 
+Write a program that asks the user to enter a distance in kilometers, and then 
+convert that distance to miles. The conversion formula is as follows: 
+Miles = Kilometers * 0.6214 
+ 
+
+kilometers = float(input(f" Enter the distance : "))
+
+def convert_distance():
+    miles = kilometers * 0.6214
+    print(f"The conversion from distance to miles is: {miles}")
+
+convert_distance()
+          
+ 
+OR 
+
+
+def main():
+    kilo = float(input("Enter kilo miles:"))
+    print(kilo, 'kilometers converted to miles is ', convert(kilo))
+    return miles
+
+main()
+          
+
+
+ 
+2.How Much Insurance? 
+Many financial experts advise that property owners should insure their homes or 
+buildings for at least 80 percent of the amount it would cost to replace the 
+structure. Write a program that asks the user to enter the replacement cost of a 
+building and then displays the minimum amount of insurance he or she should 
+buy for the property. 
+ 
+
+
+def insurance():
+    replacement_cost = float(input('Enter the replacement cost of the building: '))
+    minimum_cost = (replacement_cost * 0.8)
+
+    print()
+    print(f'Replacement cost : ${replacement_cost:,.2f}')
+    print(f'The minimum insurance policy should be: ${minimum_cost:, .2f}', "(80% of the replacement cost)")
+
+insurance()
+
+
+OR
+
+
+def main()
+    total = float(input ("What is the replacement value of your building? "))
+    replace(total)
+    print("The minimum amount of insurance to replace ' , total, ' is', replace
+    insurance = total * 0.80
+    return insurance
+
+main()
+    
+
+
+3. stadium seating 
+There are three seating categories at a stadium. For a softball game, Class A seats 
+cost $20, Class B seats cost $15, and Class C seats cost $10. Write a program that 
+asks how many tickets for each class of seats were sold, and then displays the 
+amount of income generated from each class of ticket and total ticket sales 
+
+def ticket_type():
+    class_a = int(input(f"Enter number of Tickets sold for Class a: " ))
+    class_b = int(input(f"Enter number of Tickets sold for Class b: " ))
+    class_c = int(input(f"Enter number of Tickets sold for Class c: " ))
+    class_a_income = class_a *20
+    class_b_income = class_b *15
+
+    class_c_income = class_c *10
+    print()
+    print(f"The total ticket for each class...")
+    print(f"Total income of Class A tickets: ${class_a_income}")
+    print(f"Total income of Class B tickets: ${class_b_income}")
+    print(f"Total income of Class C tickets: ${class_c_income}")
+
+ticket_type()
+
+
+ 
