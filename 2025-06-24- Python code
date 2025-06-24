@@ -1,0 +1,233 @@
+Chapter 6 Labs: Files 
+ 
+1.You currently work as a Help Desk Assistant and your boss has requested 
+you create code that will write “known good spare” parts into a text file. 
+The parts should be saved in a file called helpdesk.txt. The parts needed 
+are: motherboard, DDR4 RAM, PSU, and SATA drive. Each part should 
+appear on a separate line. Create code that will allow you to write and read 
+helpdesk.txt. 
+ 
+ 
+def main():
+
+    num_tools = int(input("How many good parts you got? : "))
+    openfile = open('helpdesk.txt', 'w')
+    for count in range (1,num_tools +1):
+        tool = input(f'What is the name of the tool? {tools}')
+        openfile.write(str(tool) * '\n')
+    openfile.close()
+    print('The tools have been written to helpdesk.txt')
+
+    openfile = open('helpdesk.txt', 'r')
+    print(openfile.read())
+    openfile.close()
+
+main()
+    
+
+
+
+ 
+2.A co-worker told you that several spare parts were not included in the 
+helpdesk.txt file. The critical parts missing are: SATA cable, CPU heatsink, 
+and NIC.  Include the three spare parts to the helpdesk.txt file. Ensure the 
+additional parts are included in the file and on separate lines. 
+ 
+
+def main():
+
+    print('SATA cable, CPU heatsink, NIC')
+    missing_parts = int(input('Enter missing parts: '))
+    openfile = open('helpdesk.txt', 'a')
+    for count in range (1, missing parts +1):
+        parts = input(f'What is the missing part? {count} ')
+        openfile.write(str(parts) + '\n')
+    openfile.close()
+    openfile = open('helpdesk.txt', 'r')
+    print(openfile.read())
+    openfile.close()
+   
+
+main()
+
+
+
+
+2.1Your new boss wants the code to ask the user to enter new spare parts. 
+Include two new spare parts into the helpdesk.txt file. But this time, 
+prompt the user to enter these parts: keyboard and mouse. Ensure the 
+additional parts are included in the file and on separate lines. 
+ 
+def main():
+    infile = open('winbuild.txt', 'w')
+    print("Enter your Windows build number")
+    build_num = float(input("Win build number: "))
+
+    infile.write(str(build_num))
+    infile.close()
+    print('The Windows build number was written to winbuild.txt')
+
+    outfile = open('winbuild.txt', 'r')
+
+    read_file = outfile.read()
+    outfile.close()
+    print(read_file)
+
+main()
+    
+    
+
+
+
+
+
+ 
+3.Write a python code that writes your device’s Windows 10/11 build number 
+into a text file called winbuild.txt. REMEMBER: you are not the only one to 
+use this this code! Write code that will allow you to read winbuild.txt. 
+HINT: numbers can not be written into text file; only string characters 
+ 
+
+
+ def main():
+    infile = open('winbuild.txt', 'w')
+    print("Enter your Windows build number")
+    build_num = float(input("Win build number: "))
+
+    infile.write(str(build_num))
+    infile.close()
+    print('The Windows build number was written to winbuild.txt')
+
+    outfile = open('winbuild.txt', 'r')
+
+    read_file = outfile.read()
+    outfile.close()
+    print(read_file)
+
+main()
+    
+    
+
+
+
+
+
+ 
+4.The security director requires you to create a program that records the 
+number of network cyber-attacks during a series of days. Enter the number 
+of days of recorded attacks and write the daily amounts into a text file 
+called cyberattack.txt. Write code that will allow you to read 
+cyberattack.txt and display the total number of attacks. 
+
+
+
+def main():
+    cyber_attacks = int(input('Enter the number of days of recorded attacks: '))
+
+    infile = open('cyber_attacks.txt', 'w')
+    total_attacks = 0
+    for count in range(1, cyber_attacks +1):
+        daily_attacks = int(input(f'How many attacks on day {count}'))
+        total_attacks = total_attacks + daily_attacks
+        infile.write(str(daily_attacks) + '\n')
+    infile.close()
+    print('The total number of cyber attacks are {total_attacks}')
+                              
+   
+
+    infile.open('cyber_attacks.txt', 'r')
+    print(infile.read())
+    infile.close()
+
+main()
+
+
+Chapter 6 Homework: Files 
+ 
+1.You are a Security Engineer at SNOW (synonym for ICE ), and you are tasked 
+to create a python code that will write the following IP Addresses into a file 
+named addresses.txt. (10.2.4.6, 10.10.160.23, 10.54.167.20). Each address 
+should appear on a separate line. 
+Create code that will allow you to create and read addresses.txt. 
+
+
+def main():
+    ip_addr = open(r'c:\Users\Katricej\Desktop\addresses.txt', 'w')
+    num1 = (input('Enter the first IP address: '))
+    num2 = (input('Enter the second IP address: '))
+    num3 = (input('Enter the third IP address: '))             
+
+    ip_addr.write(num1 + '\n')
+    ip_addr.write(num2 + '\n')
+    ip_addr.write(num3 + '\n')
+
+    ip_addr.close()
+    print("the ip addresses have beeb written to addresses.txt")
+
+main()
+
+
+
+
+
+
+
+
+ 
+2.You have been promoted to the senior pen-tester role at Cyborg Limited. 
+You are currently tasked to create a wordlist called rockyou.txt that will be 
+used to brute force an SSH account on a remote target server. The words 
+are Pa$$w0rd, admin, abc123, and myaaaah!. Each word should appear on 
+a separate line. 
+Create code that will allow you to write and read rockyou.txt. 
+
+def main():
+    
+    outfile = open(r'c:\Users\Katricej\Desktop\rockyou.txt', 'a')
+    outfile.write('Pa$$w0rd\n')
+    outfile.write('admin\n')
+    outfile.write('abc123\n')
+    outfile.write('myaaaa!')
+    outfile.close
+    
+main()
+
+
+                   
+def read_file():
+     outfile = open(r'c:\Users\Katricej\Desktop\rockyou.txt', 'r')
+     contents = outfile.read()
+     print(contents)
+     outfile.close()
+
+read_file()
+
+                   
+ 
+ 
+3.Write a python code that writes your device’s MAC address into a text file 
+called macaddress.txt. 
+Write code that will allow you to read macaddress.txt. 
+
+
+def main():
+    mac_addr = (input("What is your MAC address:  ?"))
+    runfile = open('macaddress.txt', 'w')
+    runfile.write(mac_addr)
+    runfile.close()
+    print('mac_addr has been written to file')
+
+
+    openfile = open('macaddress.txt', 'r')
+    print('first attempt')
+    print(openfile.read())
+    openfile.close()
+    openfile = open("macaddress.txt",'r')
+    print('second attempt')
+    x= openfile.read()
+    print(x)
+    openfile.close()
+    
+        
+main()
+
