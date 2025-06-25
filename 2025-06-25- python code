@@ -1,0 +1,136 @@
+Chapter 7 Labs: LISTS AND TUPLES 
+1.Using python, create a list of 4 fruits and store them in the variable fruits 
+and display each on the same line. Create another list of your top 3 
+musicians, store them in a variable called music and display each on a 
+separate line using the FOR loop. Use the same music list to display the 
+musicians on separate lines using Indexing and WHILE loop. 
+
+
+num_days = int(input('Enter days to collect sales data:  '))
+
+def main():
+    sales = [0] * num_days
+    index = 0
+    print('Enter the sales for each day.')
+    while index < num_days:
+        print('Sales for day #', index +1)
+        sales[index] = float(input())
+        index = index + 1
+        print()
+        print('Here are the values you entered:')
+        for values in sales:
+            print(values)
+
+
+main()
+
+
+ 
+2.Write a python program that will count the number of items in the list 
+called fruits in problem 1. HINT: use a built-in function 
+ 
+ 
+fruits = ['Pineapples', 'Watermelon', 'Blueberries', 'Mango']
+juicy_fruit = len(fruits)
+print(f"The number of fruit in this list is: ", juicy_fruit)
+
+
+
+
+
+
+3.Create a python program that displays the fruit list in question 1, then 
+prompts the user to add additional pieces of fruit to the already created list. 
+Display the new fruit list’s contents on separate lines. 
+
+def manage_fruit_list():
+
+
+fruits = ['apples', 'banana', 'cherry' ]
+print("initial fruit list", fruits)
+
+while true:
+    new_fruit =input("enter a fruit to add (or type 'done' to finish) : ")
+    if new_fruit.lower() == 'done':
+        break
+    fruits.append(new_fruit)
+
+    print("\nUpdated fruit list:")
+    for fruit in fruits:
+        print(fruit)
+
+if _name_ =="_main_")
+    manage_fruit_list()
+
+
+
+ 
+ 
+4.Using a python program join the list (in question 1) called fruits with the list 
+called music and display the content of the new list using a FOR loop. 
+ 
+
+fruits = ["apple", "banana", "cherry"]
+music = ["jazz", "rock", "pop"]
+
+# Join the two lists
+combined_list = fruits + music
+
+# Display each item using a for loop
+for groups in combined_list:
+    print(f"{groups}")
+
+
+print(f'\nTotal items: (len(combined_list)) '0)
+
+
+ 
+5.Using question 4 code, determine whether the pungent fruit durian and the 
+musician Prince are contained in the list. 
+ fruits =['Pineapples', 'Lemon', 'Strawberry', 'Mango']
+music = ['Currency', 'Larry June', 'Thundercat']
+
+
+combined_list = fruits + music
+
+print('Combined list contents: ')
+for groups in combined_list:
+    print(f'(groups)')
+
+print(f"\nTotal items: len(combined_list)")
+
+if search in combined_list:
+    print(search, "is in the list")
+else:
+    print(search, "Not in here!!")
+
+
+
+
+
+
+Chapter 7 HW: LISTS AND TUPLES 
+1.Design a program that asks the user to enter a store’s sales for each day of 
+the week. The amounts should be stored in a list. Use a loop to calculate 
+the total sales for the week and display the result. HINT: store is open 24/7 
+ 
+ 
+
+num_days = int(input("Enter days to collect sales data:  '))
+
+def main():
+    sales = [0] * num_days
+    index = 0
+    print('Enter the sales for each day.')
+    while index < num_days:
+        print('Sales for day #', index +1)
+        sales[index] = float(input())
+        index = index + 1
+        print()
+        print('Here are the values you entered:')
+        for values in sales:
+            print(values)
+
+
+main()
+
