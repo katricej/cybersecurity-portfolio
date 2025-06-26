@@ -1,0 +1,57 @@
+IT Help Desk Troubleshooting Guide
+By Katrice Johnson
+
+1. Basic Checks (Always Start Here)
+✅ Restart the device – Fixes 50% of issues instantly.
+✅ Check physical connections (power, cables, peripherals).
+✅ Verify network connectivity (Wi-Fi/Ethernet, ping 8.8.8.8).
+
+2. Common Issues & Solutions
+🔹 Login/Password Issues
+
+Reset password in Active Directory or Microsoft 365 Admin Portal.
+
+Enable MFA if locked out.
+
+🔹 Slow Computer
+
+Check Task Manager (CPU/RAM usage).
+
+Clear temp files (%temp% in Run).
+
+Update drivers/OS.
+
+🔹 No Internet
+
+Router/modem reboot.
+
+ipconfig /release → ipconfig /renew in CMD.
+
+Check DNS settings (try Google DNS: 8.8.8.8).
+
+🔹 Printer Not Working
+
+Restart print spooler (services.msc → "Print Spooler").
+
+Reinstall drivers.
+
+Check default printer settings.
+
+🔹 Application Crashes
+
+Reinstall software.
+
+Run as administrator.
+
+Check for updates.
+
+3. Escalation Protocol
+⚠️ Document steps taken in the ticket before escalating to Tier 2.
+📌 Include: Error messages, screenshots, user impact.
+
+4. Pro Tips
+Google error codes (e.g., "Windows error 0x80070005").
+
+Use remote tools (TeamViewer, Quick Assist) for screen sharing.
+
+Prevent future issues by creating user guides (e.g., "How to Connect to VPN").
