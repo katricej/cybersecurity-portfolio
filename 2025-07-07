@@ -1,0 +1,63 @@
+Public Key Infrastructure (PKI) Notes
+	•	Public and Private Key Usage
+	•	Public key encrypts the message
+	•	Private key decrypts the message
+	•	Used to receive confidential messages securely
+	•	Public Key Infrastructure (PKI)
+	•	Starts with asymmetric key generation (public/private keys)
+	•	Certificate request is created by the user
+	•	Certificate Authority (CA) is a trusted third party that issues certificates
+	•	The certificate contains a digital signature (hash) verifying authenticity
+	•	Validates the identity of the owner of a public key
+	•	Identity is wrapped in a digital certificate signed by the CA
+	•	Certificate Authority (CA)
+	•	Issues and guarantees digital certificates
+	•	Can be:
+	•	Private CA (used internally by organizations; can issue self-signed certificates)
+	•	Third-party CA (used for public or B2B communication)
+	•	Also generates its own public/private key pair to verify its identity
+	•	Digital Certificate
+	•	A method to trust the identity of an individual, server, or entity
+	•	Proves the ownership of a public key
+	•	Based on the X.509 standard (created by the International Telecommunication Union - ITU)
+	•	Standards and Working Groups
+	•	X.509: Defines rules for creating and reading digital certificates
+	•	PKIX (Public Key Infrastructure X.509): Working group that manages X.500 development
+	•	PKCS (Public Key Cryptography Standards): Developed by RSA to standardize cryptographic techniques
+	•	Root of Trust (RoT)
+	•	The starting point for trust in a secure system
+	•	Represents confidence, trust, or reliance in a person or entity
+	•	Root of Trust Model
+	•	Defines how entities across different CAs trust one another
+	•	Trust is verified step-by-step from the root
+	•	If the root is compromised, the entire chain is at risk
+	•	Chain of Trust
+	•	Step-by-step process where trust is passed down from the root
+	•	Starts with something fully trusted (the Root of Trust)
+	•	Certificate Authority Models
+	•	Single CA
+	•	User trusts certificates issued by one CA only
+	•	CA directly issues certificates to users and devices
+	•	Third-Party CA Hierarchy
+	•	Root CA issues certificates to one or more intermediate CAs
+	•	Root CA is self-signed and often kept offline for security
+	•	Intermediate CA issues certificates to end entities
+	•	Leaf Certificate (End-Entity Certificate)
+	•	Final certificate in the chain of trust
+	•	Belongs to the actual user, website, or server
+	•	Can be traced back to the root through intermediate CAs
+	•	Registration Authority (RA)
+	•	Verifies user identity before a certificate is issued
+	•	Works with the CA but does not issue certificates
+	•	Acts as a gatekeeper (like a passport office)
+	•	Certificate Revocation List (CRL)
+	•	A “blacklist” of digital certificates that have been revoked before expiration
+	•	Published and maintained by the Certificate Authority
+	•	Online Certificate Status Protocol (OCSP)
+	•	Protocol to check the real-time status of a certificate
+	•	OCSP responder (a server) replies if a certificate is valid or revoked
+	•	Relies on CRL data in the background
+	•	OCSP Stapling
+	•	A performance and privacy enhancement
+	•	Website provides a signed OCSP response to the browser
+	•	Avoids the browser having to contact the CA directly
