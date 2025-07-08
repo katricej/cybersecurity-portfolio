@@ -1,0 +1,89 @@
+Cryptographic Solutions
+
+Key Management
+Operational concerns regarding the lifecycle of keys
+
+*Decentralized Management- Each User/Host responsible for key managment
+*Centralized Management- Admin/Authority controls key management
+--Keys generated and stored on a centralized server
+
+Key Management Interoperability Protocol (KMIP)- used to communicate with server
+
+KEY LIFE CYCLE:
+1)  Key Generation- Creates strong Key pair with right Cipher
+2)  Certificate Generation-subject submits Digital Certificate for signing Certificate Authority verifies identity
+3)  Storage- Subject stores private key; Not Lost or Damaged
+4)  Revocation- If private key is compromised, Key pair is revoked
+5)  Expiration and Renewal- Key pair expires. "Shelf Life".  Renew with New Info
+
+Key Escrow
+If you lose the Private Key they have the backup
+If key lost/damaged, Encrypted data is unrecoverable
+
+Key Strength Based on:
+1)  Randomness- ENTROPY
+2)  Key Length
+
+Data States
+Data at Rest- Data in a persistent storage media
+Data in Transit (Data in Motion)- Data is transmitted over network
+Data in Use (Data in Processing) Data is Present in Volatile Memory
+
+Bulk Data Encryption (Hybrid Encryption)
+Encrypting Large Amount of Data (Megabytes/Gigabytes)
+
+
+Why NOT use Asymmetric Key????
+Not efficient for encrypting large amounts of data
+Overhead is too high
+
+Trusted Platform Module (TPM)
+A hardware-based security chip embedded in computers and devices.
+Provides secure storage and cryptographic functions to help protect sensitive data like, Encryption keys, Passwords, and Digital Certificates
+
+Hardware Security Module (HSM)
+A dedicated tamper-resistant hardware device designed to securely generate, store, and manage cryptographic keys
+High security digital safe that stores and protects important digital keys
+
+
+MS Bitlocker- Encrypt the entire Hard Drive
+
+MS Encrypting File System (EFS)- Encrypts Files and Folders
+
+Structured Data
+Stores data in tables, Columns (Fields), and Rows (Records)
+
+Perfect Forward Secrecy (PFS)
+A security feature in encryption systems that ensures even if someone steals your private key later they can't decrypt past communications
+Implementation: Diffie Hellman Ephemeral mode (DHE or EDH); Elliptic Curve Diffie- Hellman Ephemeral mode (ECDHE)
+
+SALTING
+Short random set of characters
+Adding unique Random value ("a salt") to each password Before hashing it
+Value stored with hashed data field
+Hash can not be decrypted
+Makes each password Hash Different
+
+PEPPER
+Short string added to a password Before Hashing
+Adds secret twist only the system knows
+IS NOT STORED
+Kept Secret
+
+Blockchain- continuing transaction records secured with cryptography
+
+Obfuscation- Making something Hard to Understand on Purpose, so that attackers or unauthorized users can't easily figure out how it works or what it contains
+
+Steganography- Method used to hide data within file (Audio or Image File)
+Hiding a message inside something else so that no one even knows the message is there
+Concealing information within a different message
+EX: Steganography in VOIP
+
+Data Masking
+Process of hiding or replacing sensitive information with fake but realistic looking data to protect it
+EX: xxx-xx-1234
+
+Tokenization
+Replace sensitive data with a Random String called a token that has no meaningful value outside the system
+EX: 8NQ59ZZ01
+RREVERSIBLE
