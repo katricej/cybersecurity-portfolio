@@ -1,0 +1,169 @@
+Enterprise Network Architecture
+
+Data Plane- Moving packets (Physical0 1s& 0s 
+Ex: Firewall, Switch, Router
+
+Control Plane- Routing/Forward
+IPv4 IPv6
+
+Management Plane- Configure the device ; Administration; Make changes
+
+Network Segmentation
+Creating sub-networks in a network
+Dividing a computer network into smaller parts to make it safer and more organized
+* Organization
+* Reducing Size of Broadcast Domains
+* Enhancing Security
+
+Network Segmentation Techniques:
+Physical Segmentation- Different Switches, Routers, Cables
+                       Uses Hardware, seperate devices
+Virtual Segmentation- VLAN (Virtual Local Area Network)
+                      Logically using software
+
+
+
+Security Zones
+Segment containing hosts with same access control and security requirements
+Three Zones:
+Internet (untrusted)
+DMZ (Semi-Trusted)
+Internal Network ( Trusted)
+
+Screened Subnet- is a more secure version of a DMZ
+
+Multi-homed- a device or network that is connected to two or more networks at the same time
+
+
+Ad hoc Network ("or this")
+A decentralized network
+Temporary wireless network created without any central device (like a router or access point)
+
+Attack Surface- POINTS where threat actor can gain access
+
+
+
+IEEE 802.1X
+Network securtity standard that controls WHO can connect to a network- whether its Wired or Wireless
+A netowrk access control standard developed by the Instistute of Electrical and Electronics Engineers (IEEE)
+Provides framework for Authenticating devices or users trying to access a network
+
+Network Access Control (NAC)
+A security system that controls WHO and WHAT is allowed to connect to a network
+1) WHO you are
+2) What device You're using
+3) If Your Device is SAFE
+
+
+Port Security
+A feature on Network Swithches that controls which devices can connect to a specific physical port
+Restricts Network access on a switch port to specific devices based on their MAC addresses
+Physical Port security- Limit Physical Access
+
+Air gapped
+Host not Physically connected to ANY Network
+Physically isolated - it is NOT connected to the internet or any other network
+Can use ElectroMagnetic Wave Power to gain access/bypass air gap --Ethernet Over Power
+
+Extensible Authentiction Protocol (EAP) 
+Commonly used on Wireless networks (WPA/WPA2)
+Framework used for Network Access Authentication
+Likes- Passwords/Questions, Certificates(Public Key), Token(Key fob)
+
+
+Acceptable Use Policy (AUP)
+A Deterrent Control- because AUP doesn't stop users technology but it Discourages bad behavior by setting rules and consequences
+
+
+Agent-Based- Software installed/ Active
+Agent-Less- NO Software installed /Passive
+
+
+Test Access Point (TAP)
+Copies all Network traffic
+Monitors traffic
+
+
+
+Switched Port Analyzer (SPAN)
+Port-Mirroring
+Feature of network switch that copies traffic from one port (or multiple ports) and sends it to another port where monitoring device is connected
+
+
+
+Fail-Open
+IF something fails or loses power, the system OPENS the path so things can keep moving
+
+Fail-Close (Fail secure)
+If something fails, the system CLOSES or Locks the path to stop access
+
+
+
+Firewall 
+Filters Traffic
+
+TYPEs:
+Stateless- Looks at one Packet at a time.
+EX: Source address| Destination Address| Version Ipv6 or 4| Port Number
+
+Statefull- Looks at the Conversation
+
+Hostbased- Runs of single host
+EX: Defender, McAfee, Symantec
+
+Network Based- run software on host (Protects the Network)
+EX: PFSense, Cisco
+
+Application Firewall- runs on a server to protect particular application
+
+Network Operating System (NOS)- Firewall that runs under network Server OS
+
+Layer 4 Firewall- TCP 3-way handshake.  Uses TCP and UDP
+
+Layer 7 Firewall- Focuses on the Application. Inspect headers and payloads of application layer packets.
+                  EX: HTTPS, HTTP, POP3, IMAP, SMTP, Database(MySQL, Oracle, MSSQL)
+
+
+Proxy Server
+Works as "Store and Forward: Model
+Looks at Web traffic, Email traffic, Database traffic
+*Application specific
+Does NAT(Natting) Network Access Translation Private-->Public
+Caching (in Memory)
+
+Forward Proxy- Traffic going OUTBOUND
+Reverse Proxy- Traffic coming INBOUND
+
+
+
+Unified Threat Management (UTM)
+All in one security appliance box
+Centralizes firewall antivirus NIPS, Spam Filtering, Content Filtering, Data Lose Prevention, VPN, Cloud Access Gateway
+Ideal for Branch Office
+
+Next Generation Firewall (NGFW)
+Tracks the state of traffic based on Layer 2-7
+Combine application aware filter with user account based filter
+
+
+Load Balancing
+Distributes requests acreoss farm or pool of servers
+*Round Robin (123, 123), First in First Out (FIFO)
+*Weighting - Assign RATIO to server
+
+
+
+Clustering
+Distributes client traffic over two or more nodes
+Active-Active spreads workload avoids idleness and overload
+Active-Passive- if Node fails all client traffic goes to Passive mode
+
+
+
+
+
+
+
+
+
+
