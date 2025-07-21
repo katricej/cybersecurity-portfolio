@@ -1,0 +1,111 @@
+
+
+Backup Types and Data Protection
+
+Differential Backup
+- Status of archive attribute before including File/Filter.  
+- Backs up all files changed since the last full backup.  
+- Faster than full backup but not as comprehensive.  
+- Backs up data changed since the last **FULL** backup.  
+
+Full Backup + Last Differential = Complete Backup 
+- Discarding = Review.  
+
+Advanced Data Protection Methods
+1. **Snapshots**  
+   - Method of backup while files are open.  
+   - Common for cloud environments 
+   - Enables instant recovery of an entire system.  
+
+2. File Mirrors  
+   - Reflects changes on one side to another.  
+
+3. Replication 
+   - Creates and maintains an exact copy of data on different storage/locations.  
+   - Asynchronous Replication:  
+     - Data written to replica after being written to primary.  
+     - Not real-time; occurs on a scheduled basis.  
+     - Ideal for low bandwidth and long distances.  
+   - Synchronous Replication:  
+     - Data written simultaneously to primary and replica storage.  
+     - Failover is instantaneous.  
+     - Requires high bandwidth.  
+
+---
+
+Data Disposal and Asset Management  
+
+Asset Disposal 
+- Secure and compliant handling of data and storage devices at the end of their lifecycle.  
+
+Decommission Policy 
+- Plan for removing unused IT assets:  
+  - Hardware: Secure disposal (e.g., physical destruction).  
+  - **Software/Apps**: Uninstallation and data wiping.  
+
+#### **Data Destruction Methods**  
+1. **Degaussing**  
+   - Magnetically destroys stored data. Highly reliable.  
+2. **Physical Destruction**  
+   - Drilling, shredding, or damaging drives.  
+   - **Highly reliable** for ensuring data irrecoverability.  
+3. **Encryption**  
+   - Protects data but requires key management.  
+
+---
+
+Backup Strategies 
+
+On-site Backups 
+- Data is immediately available.  
+
+Off-site Backups  
+- Data stored remotely for disaster recovery.  
+- Can be performed anywhere.  
+
+Backup Types  
+1. Full Backup 
+   - Complete copy of all data.  
+   - Disadvantage: Largest storage requirement and longest restoration time.  
+2. Incremental Backup  
+   - Backs up only files changed since the last backup (full or incremental).  
+   - Faster but requires a full backup for restoration.  
+
+Protecting Backup Data
+- Use encryption with a recovery key for secure restoration.  
+
+---
+
+IT Infrastructure and Security
+
+SD-WAN (Software-Defined WAN)
+- Manages and connects office locations over the internet.  
+- Optimizes traffic routing, saves costs, and enhances security.  
+
+Virtual Machines (VMs)
+- Software-based computers running on a physical host.  
+- Isolated, portable, and uses virtual hardware.  
+- Managed by a hypervisor.  
+
+Zero Trust Security  
+- Principle: "Never trust, always verify."  
+- Focuses on protecting individual resources rather than network boundaries.  
+- Assumes no device, user, or service is inherently trusted, regardless of location.  
+
+Asset Management 
+-Asset Classification: Organize based on value, sensitivity, and criticality.  
+- Asset Tracking: Includes inventory, enumeration, and reporting.  
+
+Microservices/FaaS (Function as a Service) 
+- Small, focused services that perform single tasks.  
+- Independent, communicate via APIs (e.g., REST).  
+- **Benefits**:  
+  - No server management (handled by cloud).  
+  - Auto-scales based on demand.  
+  - Pay-per-use pricing model.  
+
+--- 
+
+OT (Operational Technology) vs. IT  
+- IT: Tolerates latency (e.g., slow response times).  
+- OT: Deterministic—tasks have predictable execution times. No latency allowed.  
