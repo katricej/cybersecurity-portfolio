@@ -4,23 +4,104 @@ Redundancy Strategies
 
 
 Business Continuity Planning (BCP) (The Big Plan)
-Plan that outlines how your business will continue operating during an unplanned disruption in Service [?].
-Focus on keeping the business running.
+Plan that outlines how your business will continue operating during an unplanned disruption in Service.
+Focus on the ENTIRE business running.
 How to get back to normal business.
 
 Disaster Recovery Plan (DRP) (Fix IT Plan)
-Focus on IT systems, infrastructure, and Data Recovery.
+Focus on IT systems, Networks, and Data Recovery.
 A detailed plan for how your business will recover lost data, restore technology systems, and get IT operations running again after a major disruption.
 
 Business Impact Analysis (BIA) (Thinking Plan)
 Figure out which parts of your business are most important and what happens if they stop working.
 Calculate impact as costs.
+>Identify Business Priorities
+>Identify Risks
+>Assess Likelihood
+>Assess Impact
+>Prioritize resources
 
 Mission Essential Functions (MEF) must be restored first.
 
-Continuity of Operations Planning (COOP) – Resume Critical Functions in the event of unscheduled disruptions or crisis.
+Continuity of Operations Planning (COOP) – Resume Critical Functions in the event disaster, disruption or crisis.
 
-Crisis Response Plan (CRP)
-& Threats (Generated from)
-Planning
-Impact (18 months) 
+
+Annual Rate of Occurrence (ARO)
+Estimate how often a specific threat or event is expected to occur within a year
+ARO= Number of times (frequency) happen in a year
+
+
+Single Loss Expectancy (ALE) $$$$ Monetary Loss
+Amount of damage a risk cause over a one year period
+
+
+High Availability
+Making sure a system or service is up and running ALMOST ALL the time with very little downtime
+**Downtime- percent (%) of time system is unavailable
+
+
+Maximum Tolerable Downtime (MTD)
+Deadline for restoring a system or process after a disruption
+
+Scalability- Your system can handle more users, data, or work by ignoring bigger and spreading out
+**Scale Up- Increase power of existing resources (Vertical) 
+**Scale Out- Add more resources in parallel with existing resources (Horizontal)
+
+
+Load Balancing
+Distribute workload across multiple systems; Handles Heartbeat
+*Heartbeat- shows that signal is active
+
+
+Types:
+
+Round Robin 
+(123,123)
+Fixed / Sequential
+
+Weighting- 
+Percent based off traffic
+Smart, constantly montitoring, More Expensive
+Assigns specifically to an application
+
+Dynamic
+Random select
+Has 9 Algorithms
+
+Load Balancing Network
+Customer
+Internet
+Load Balancer (Auto scaling)
+Applications
+
+
+
+Tabletop Exercises
+Teams discussing and working through Hypothetical scernarios
+
+
+Failover Test- Intentionally causes the failure of a primary system or component
+
+Simulations
+Controlled experiments replicating real world scenarios
+EX: Phising attack, Password requests, Data Breaches
+
+
+Parallel Processing Tests
+Run Primary and Backup systems simulataneously improved performance and recovery
+
+
+Indicator of Compromise (IoC) 
+"Breadcrumbs"
+What attackers leave behind, even when they try to hide their tracks
+A clue or piece of evidence that suggests a system has been hacked, infected, or otherwise compromised
+Digital fingerprint left behind by an attacker
+
+
+Fake Telemetry
+False or Manipulated data that a system, software, or attacker sends to make it appear normal or healthy.
+
+
+Paper Test
+Non-Technical security test where you renew documents and procedures instead of running code or tools.  
+Like reading the playbook to see if the security plan makes sense without actually playing the game
