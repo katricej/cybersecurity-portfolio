@@ -1,0 +1,26 @@
+BCDR: Business Continuity & Disaster Recovery
+
+Redundancy Strategies
+
+
+Business Continuity Planning (BCP) (The Big Plan)
+Plan that outlines how your business will continue operating during an unplanned disruption in Service [?].
+Focus on keeping the business running.
+How to get back to normal business.
+
+Disaster Recovery Plan (DRP) (Fix IT Plan)
+Focus on IT systems, infrastructure, and Data Recovery.
+A detailed plan for how your business will recover lost data, restore technology systems, and get IT operations running again after a major disruption.
+
+Business Impact Analysis (BIA) (Thinking Plan)
+Figure out which parts of your business are most important and what happens if they stop working.
+Calculate impact as costs.
+
+Mission Essential Functions (MEF) must be restored first.
+
+Continuity of Operations Planning (COOP) – Resume Critical Functions in the event of unscheduled disruptions or crisis.
+
+Crisis Response Plan (CRP)
+& Threats (Generated from)
+Planning
+Impact (18 months) 
