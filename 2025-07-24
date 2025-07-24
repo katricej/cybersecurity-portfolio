@@ -34,9 +34,163 @@ Software (like old games or programs) that is No longer sold, supported, or upda
 
 VM escape
 Vulnerability where an attacker breaks out a virtual machine (VM) and gains access to the host system or other VMs running on the same test 
-
+Outdated and Unpatched virtualization software misconfiguration and lack of indequate isolation between the VM
+To avoid: Patch, Update system, Security inside
 
 VM Sprawl
 When an organization creates too many VMs WITHOUT proper control, tracking, or purpose
+Lack of VM lifeline Management
+Forget to Decomission unused VMs
 Leading to Waste, Confusion, and Security Risks
+Proper Management of VMs helps avoid VM sprawl
 
+
+Zero-Day Vulnerability
+Flaw UNKNOWN to Developer 
+Unknown security flaw in software, hardware, or firmware
+
+N-Day Vulnerability
+Flaw that has already been discovered, publicly disclosed, and has a patch
+Flaw IS a patch available
+N represents Number of Days since the vulnerability became publicly known
+
+
+Misconfiguration Vulnerabilites
+Common cause of security vulnerabilites
+
+
+Cryptographic Vulnerabilites
+Weaknesses in cryptographic systems, protocols, or algorithms
+Weak Keys: Key Length (Too short), Random Number Generator
+
+
+Jailbreaking
+Process of removing software restrictions
+Common in Apple: OS devices (iPhone and IPads)
+
+Rooting
+Gaining administrator (root) access to an Android device
+
+F-Droid
+Free and Open-source app store for Android
+Focus on privacy transparency and freedom
+
+
+
+Application and Cloud Vulnerabilities
+
+Privilege Escalation
+Get privileges from vulnerable process by:
+Arbrtrary code execution
+Remote code execution
+Vertical "Elevation"
+Horizontal - Gain access from another similar privileges
+
+
+Improper Error Handling
+Passing invalid or maliciously constructed data to vulnerable process
+"Sanitization"/You need to sanitize to help with this issue
+
+Pointer Deference
+A pointer is a variable (in C/C+) that is used to refer to memory location and not a value
+
+
+Race Condition
+Means of engineering a null pointer deference exception
+"Timing Issue"
+The threads are "racing" each other to access or change data 
+Happens when Two Things happen at the SAME TIME, and the result depends on who finishes first- like a race
+To Avoid:  Have a good solid code because this was able to happen because there was a flaw in the code
+
+Memory Injection
+Attacker introduces (inject) malicious code into a running applications process memory
+Uses: Install Malware, Exfiltrate sensitive data, create backdoor
+
+
+Memory Leak
+Program reserves memory but DOESN'T release it even after its done using it
+Leads to: Slow downs, Crashes, or even Denial of Service (DoS)
+To avoid: Need to Shutdown program properly  
+
+
+Buffer Overflow
+Program writes MORE data into a memory buffer then it can hold, causing it to OVERFLOW into nearby memory
+Buffer is deliberately overfilled
+Can exist in legacy systems that contain language (C)
+EX: Morris Worm of 1988- considered first internet security incident
+To avoid: Use Python, Address space layout (make it Dynamic), Use of Non-executable memory, Use Canary's, Update software
+
+
+Dynamic-Link Library
+Files in Window to hide, load, or execute Malicious code (Import)
+"Microsoft Based" Library
+Attackers inject a path to a malicious DLL
+Attack vector for malicious attacker
+
+Scope
+Refers to product, system or service being analyzed for potential security vulnerabilities
+Boundaries and elements that are included in a cybersecurity assessment, project, or operation
+
+
+Cloud Access Security Broker (CASB)
+Security tool that sits between your users and cloud services
+It helps your company control and protect how people use the cloud apps
+Smart security filter between your people and the cloud
+Problems: Managed Devices, Unmanaged Devices, Unsanctioned Apps, Sanctioned apps
+
+
+CASB- Forward Proxy
+A checkpoint that sits in the FRONT of the internet, watching and controlling traffic BEFORE it reaches cloud services like Google Drive or DropBox
+Like a security gate that checks your stuff before it goes online
+
+Three Methods: 
+1)  Endpoint Agent
+2)  Proxy auto-config (PAC) file
+3)  In path interception (SWG)
+
+Can control access to applications
+Can do DLP (Data Loss Prevention) in real time
+It may be able to take actions based on findings (EX:  Block a Download)
+
+CASB-Reverse Proxy
+Sits BEHIND the cloud app watching and controlling user traffic as it comes into the cloud service
+Agentless
+Unmanaged
+Like a security guard inside the cloud app, checking what people do once they log in
+Best for Unmanaged devices (Personal phones/laptops) BYOD
+
+
+Software Bill of Materials
+A list of everything inside a piece of software
+Like a recipe or ingredient lable for software
+Helps teams manage security, transparency, and trust
+
+Injection Attacks
+Happens when a hacker puts malicious code or commands into a place where the app expects safe input- like a form or a URL
+
+
+Replay Attack
+When a hacker captures a valid message or request and then re-sends (replays) it to trick a system into doing something again
+T0 Avoid: use Kerberos>> uses Time stamped Tickets
+
+
+
+TCP Handshake (Transmission Control Protocol)
+How to computers (Client/Server) start a connection so they can talk to each other reliably over the internet
+SYN= Synchoronize
+ACK- Acknowledge/Acknowledgement
+
+3 STEPS:
+1)  Client >> Server: SYN --->> Client says "Hi I want to connect"
+2)  Server >> Client  SYN-ACK --->> Server repies "Okay I got your message"
+3)  Client >> Server  ACK------------>>Client says "Thanks! Lets start talking"
+
+
+1) Start Session  SYN--->>>
+2) Conversation   <<--------SYN-ACK
+3) Session Ending  ACK---------->>
+
+STEPS
+1) TCP Handshake 3-way handshake
+2) Data Transmission
+3) 4-step procedure to close the session / Connection Termination 
