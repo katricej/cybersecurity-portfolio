@@ -1,0 +1,137 @@
+🧪 Lab Report: Configuring NAT Port Forwarding on pfSense
+
+Lab Title: 5.3.4 Lab – Configure NAT
+Your Role: IT Administrator
+Objective: Allow remote access from LAN to DMZ devices using NAT port forwarding in pfSense.
+
+⸻
+
+📝 Scenario
+
+As the network administrator for a small corporate environment, you need to manage several systems in a DMZ (Demilitarized Zone) from your internal LAN network. To accomplish this securely, you’ll configure NAT (Network Address Translation) port forwarding rules on a pfSense firewall, allowing specific remote management protocols to pass through.
+
+⸻
+
+🔧 Lab Environment
+	•	pfSense Management URL: http://198.28.56.22
+	•	Username: admin
+	•	Password: P@ssw0rd
+	•	DMZ Devices:
+	•	PC1: 172.16.1.100 (Windows)
+	•	Kali Linux Server: 172.16.1.6
+	•	Web Server: 172.16.1.5
+
+⸻
+
+🎯 Goals
+
+You will create three NAT port forwarding rules:
+	1.	Allow RDP (port 3389) from LAN to PC1
+	2.	Allow SSH (port 22) from LAN to Kali Linux
+	3.	Allow RDP (custom port 5151) from LAN to Web Server
+
+⸻
+
+🛠️ Procedure and Explanation
+
+✅ Step 1: Log in to pfSense
+	•	Navigate to: http://198.28.56.22
+	•	Enter credentials:
+	•	Username: admin
+	•	Password: P@ssw0rd
+
+Why: You need access to pfSense’s web interface to create NAT and firewall rules.
+
+⸻
+
+✅ Step 2: NAT Rule – RDP to PC1
+	•	Target IP: 172.16.1.100
+	•	Protocol: TCP
+	•	Port: 3389
+	•	Description: RDP from LAN to PC1
+
+How to configure:
+	1.	Go to Firewall > NAT > Port Forward
+	2.	Click Add (+)
+	3.	Interface: LAN
+	4.	Protocol: TCP
+	5.	Destination Port Range: 3389
+	6.	Redirect target IP: 172.16.1.100
+	7.	Redirect target port: 3389
+	8.	Description: RDP from LAN to PC1
+	9.	Save and apply
+
+Why: Allows remote desktop access from inside the LAN to PC1 in the DMZ.
+
+⸻
+
+✅ Step 3: NAT Rule – SSH to Kali Linux
+	•	Target IP: 172.16.1.6
+	•	Protocol: TCP
+	•	Port: 22
+	•	Description: SSH from LAN to Kali
+
+How to configure:
+	1.	Add a new NAT rule
+	2.	Interface: LAN
+	3.	Protocol: TCP
+	4.	Destination port: 22
+	5.	Redirect target IP: 172.16.1.6
+	6.	Redirect target port: 22
+	7.	Description: SSH from LAN to Kali
+	8.	Save and apply
+
+Why: Enables secure terminal access to the Kali server using SSH from the LAN.
+
+⸻
+
+✅ Step 4: NAT Rule – RDP to Web Server (Custom Port)
+	•	Target IP: 172.16.1.5
+	•	Custom Port (LAN side): 5151
+	•	Redirect to Port: 3389
+	•	Description: RDP from LAN to web server using custom port
+
+How to configure:
+	1.	Add another NAT rule
+	2.	Interface: LAN
+	3.	Protocol: TCP
+	4.	Destination Port Range: 5151
+	5.	Redirect target IP: 172.16.1.5
+	6.	Redirect target port: 3389
+	7.	Description: RDP from LAN to web server using custom port
+	8.	Save and apply
+
+Why: Adds remote access to the web server using a custom port (5151), improving security through port obfuscation while maintaining full RDP functionality.
+
+⸻
+
+🔁 Step 5: Confirm Firewall Rules
+	•	Navigate to Firewall > Rules > LAN
+	•	Verify that rules were auto-created
+	•	Ensure they match the NAT rules above
+
+Why: NAT port forwarding alone is not enough — traffic must be allowed by firewall rules, which pfSense often creates automatically. Always verify!
+
+⸻
+
+✅ Results / Verification
+
+After configuring each rule:
+	•	Use RDP from LAN to access:
+	•	PC1 via 3389
+	•	Web Server via 5151
+	•	Use SSH to connect to:
+	•	Kali Linux on port 22
+
+Each service should now be reachable from the LAN while still respecting the DMZ’s isolation.
+
+⸻
+
+🧠 Conclusion
+
+This lab demonstrated how to:
+	•	Configure NAT port forwarding for secure LAN-to-DMZ communication
+	•	Use standard and custom ports to manage devices
+	•	Balance accessibility with security via pfSense firewall
+
+By completing these steps, you’ve gained practical experience in creating a segmented but accessible enterprise network using pfSense.
