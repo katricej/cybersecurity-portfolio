@@ -1,0 +1,42 @@
+Operating Systems Vulnerabilites
+
+Vulnerability attack vector
+The path or method an attacker uses to exploit a vulnerability in a system
+
+Attack Vectors
+The way a hacker gets into a system
+EX: Phising, Malware, Unpatched Software, Weak Passwords, Drive-by Download, SQL injection, and Social Engineering
+*Drive-by Download- A cyberattack in which malicious software is automatically downloaded to a user's device without their knowledge or consent- often by visiting a compromised or malicious website
+*SQL Injection- A Vulnerability that allows an attacker to interfere with the queries an application makes to its database.  It allows attackers to View, Modify, or even Delete data without proper authorization
+
+
+VULNERABILITY TYPES:
+
+Legacy Systems
+Outdated system, continue to use despite its shortcomings
+
+End of Life (EOL) Systems
+Vendor publicly declares as no longer supported 
+Manufacturer STOPS selling and developing a product
+
+End of Service Life (EOSL) Systems
+Manufacturer STOPS all support, even security updates and customer service
+NO MORE:
+Technical Support
+Security Patches
+Spare parts (for Hardware)
+
+
+Abandonware
+Software (like old games or programs) that is No longer sold, supported, or updated by its original developer or publisher
+
+
+
+VM escape
+Vulnerability where an attacker breaks out a virtual machine (VM) and gains access to the host system or other VMs running on the same test 
+
+
+VM Sprawl
+When an organization creates too many VMs WITHOUT proper control, tracking, or purpose
+Leading to Waste, Confusion, and Security Risks
+
