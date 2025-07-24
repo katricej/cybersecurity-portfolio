@@ -1,0 +1,208 @@
+🛡️ Operating Systems & Application Vulnerabilities
+🔍 Vulnerability Attack Vector
+Definition:
+The method or path an attacker uses to exploit a vulnerability in a system.
+
+Common Attack Vectors:
+
+📧 Phishing
+
+🦠 Malware
+
+🧩 Unpatched Software
+
+🔐 Weak Passwords
+
+🌐 Drive-by Download
+
+💉 SQL Injection
+
+🎭 Social Engineering
+
+Drive-by Download:
+A cyberattack where malicious software is automatically downloaded without user consent—often triggered by visiting a compromised site.
+
+SQL Injection:
+An attacker manipulates database queries to view, modify, or delete data without authorization.
+
+🧱 Vulnerability Types
+🕰️ Legacy Systems
+Outdated systems still in use despite known issues.
+
+🔚 End of Life (EOL) Systems
+No longer supported or sold by the vendor.
+
+❌ End of Service Life (EOSL)
+No support, patches, or spare parts.
+
+🚫 No technical support
+
+🚫 No security updates
+
+🚫 No hardware maintenance
+
+👻 Abandonware
+Old software no longer maintained or supported.
+
+💻 Virtualization Vulnerabilities
+🔓 VM Escape
+Attacker escapes VM to access host or other VMs.
+
+Prevention: Patch regularly, use secure VM isolation.
+
+🌀 VM Sprawl
+Uncontrolled VM creation.
+
+Risks: Waste, confusion, security risks.
+
+Fix: Implement VM lifecycle management.
+
+⏳ Zero-Day & N-Day Vulnerabilities
+Zero-Day: Unknown to developers.
+
+N-Day: Known flaw with a patch available.
+(N = days since disclosure)
+
+⚙️ Misconfiguration & Cryptographic Vulnerabilities
+🔧 Common setup errors can expose systems.
+
+🔐 Cryptographic Weaknesses:
+
+Weak keys
+
+Poor random number generation
+
+📱 Device Modifications
+Jailbreaking: Bypass iOS restrictions.
+
+Rooting: Admin access on Android.
+
+F-Droid: Privacy-focused, open-source app store for Android.
+
+☁️ Application & Cloud Vulnerabilities
+🧍 Privilege Escalation
+Gain higher permissions using:
+
+Arbitrary code execution
+
+Remote code execution
+
+Types:
+
+🔼 Vertical Escalation
+
+↔️ Horizontal Escalation
+
+❗ Improper Error Handling
+Fails to sanitize input → Exploits
+
+🧠 Pointer Dereference
+Vulnerability in C/C++ where pointer references invalid memory.
+
+⏱️ Race Condition
+Timing issue where operations race, causing unpredictable behavior.
+
+💉 Memory Injection
+Injects malicious code into an application’s memory.
+
+🧠 Memory Leak
+Program fails to release unused memory → Crash or DoS.
+
+📦 Buffer Overflow
+Program overflows data into adjacent memory.
+
+Prevention Tips:
+
+Use Python
+
+Enable address space randomization
+
+Use non-executable memory
+
+Use Canaries
+
+Patch software
+
+Example: Morris Worm (1988) – First major internet security incident.
+
+📚 DLL Injection
+Inject malicious code using Dynamic-Link Library files (Windows).
+
+Exploit via loading malicious DLL paths.
+
+📏 Scope in Security
+Defines what system, app, or service is being assessed.
+
+Sets boundaries for cybersecurity audits or red teaming.
+
+🛡️ Cloud Access Security Broker (CASB)
+Definition:
+Middleware that protects & monitors access between users and cloud services.
+
+🚪 Forward Proxy
+In front of cloud apps
+
+Good for managed devices
+
+Filters data before it hits the cloud
+
+Methods:
+
+Endpoint Agent
+
+PAC File
+
+In-path interception (SWG)
+
+🧍 Reverse Proxy
+Sits behind cloud apps
+
+Agentless
+
+Best for unmanaged devices / BYOD
+
+🧾 Software Bill of Materials (SBOM)
+A "recipe list" of components in software.
+
+Ensures transparency, security, and trust.
+
+🛠️ Injection & Replay Attacks
+💉 Injection Attacks
+Insert malicious input where app expects safe data.
+
+🔁 Replay Attacks
+Re-send valid requests to trick systems.
+
+Prevention: Use Kerberos with time-stamped tickets
+
+🌐 TCP Handshake: 3-Way Communication
+Used for reliable communication between two devices.
+
+3 Steps:
+Client → Server: SYN
+
+Server → Client: SYN-ACK
+
+Client → Server: ACK
+
+📡 TCP Communication Process
+🔌 Start Session: SYN
+
+💬 Data Exchange: SYN-ACK
+
+🔚 End Session: ACK
+
+🔒 Session Termination
+
+✅ Final Tips
+Keep systems patched and updated
+
+Use secure coding practices
+
+Avoid legacy and unsupported software
+
+Sanitize inputs & manage VM lifecycles
+
+Leverage CASB tools for cloud protection
+
+Monitor for cryptographic flaws and misconfigurations
