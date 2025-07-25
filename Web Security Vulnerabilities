@@ -1,0 +1,157 @@
+🔐 Web Security Vulnerabilities
+🕵️‍♂️ Session Hijacking
+A type of cyberattack where an attacker takes over a valid session between a user and a web application.
+
+The attacker can act as the user:
+
+Access private data
+
+Perform actions like account changes or transactions
+
+Commonly uses stolen session cookies.
+
+How? Sniff network traffic on unsecured networks (e.g., public Wi-Fi).
+
+Example: Attacker captures session cookie at a coffee shop Wi-Fi and hijacks your banking session.
+
+🌐 Cross-Site Request Forgery (CSRF/XSRF)
+A web attack that tricks a logged-in user into performing unwanted actions (like transferring money) on a trusted site.
+
+Relies on the fact that browsers automatically send cookies with every request — even if the user didn’t trigger the action knowingly.
+
+🛡️ How to Prevent CSRF:
+CSRF Tokens:
+
+Random, secret values added to forms.
+
+The server checks the token on submission.
+
+✅ Like a hidden handshake between the browser and server.
+
+SameSite Cookies:
+
+Prevent cookies from being sent on cross-site requests.
+
+Double-Submit Cookies:
+
+Token is stored in both a cookie and a form/header — must match.
+
+Check Referer or Origin Headers:
+
+Ensure the request came from your domain.
+
+⚔️ Cross-Site Scripting (XSS)
+A type of attack where a hacker injects malicious JavaScript into a website that runs in other users’ browsers.
+
+Often happens in comment boxes, form inputs, or URLs.
+
+🧨 What XSS Can Cause:
+Threat	Description
+Cookie/session theft	Hijack logged-in sessions
+Phishing attacks	Fake login forms or messages
+Redirects	Send user to a malicious site
+Keylogging	Record user keystrokes
+Site Defacement	Alter the appearance of the website
+Data Theft	Read private content on a page
+Privilege Abuse	Perform actions as another user
+
+📁 Directory Traversal Attack (Path Traversal)
+A vulnerability where attackers access unauthorized files by manipulating file paths.
+
+Example input:
+
+bash
+Copy
+Edit
+../etc/passwd
+🚪 How They Do It:
+Use ../ to go back one folder in the directory structure.
+
+Encoded versions:
+
+%2e = .
+
+%2f = /
+
+%2e%2e%2f = ../
+
+🛡️ How to Prevent:
+✅ Block ../ patterns in input.
+
+✅ Use a fixed folder for loading files.
+
+✅ Whitelist filenames — only allow known safe file names.
+
+🛰️ Server-Side Request Forgery (SSRF)
+The attacker tricks the server itself into making HTTP requests to internal or unauthorized systems.
+
+Exploits services that fetch URLs from user input.
+
+🧠 Example:
+Attacker sends: http://169.254.169.254 (AWS metadata URL)
+The server sends the request internally, leaking credentials.
+
+💥 SSRF Can Cause:
+Attack Result	What It Means
+Access internal systems	Internal IPs like 127.0.0.1, localhost
+Steal metadata (cloud)	AWS metadata at http://169.254.169.254
+Bypass firewalls/filters	Reach private/internal systems via server
+Remote Code Execution	If vulnerable services are accessed
+Denial of Service (DoS)	Flood internal services with fake requests
+
+🛢️ SQL Injection (SQLi)
+A vulnerability where an attacker injects malicious SQL commands into input fields.
+
+Happens when user input is directly added to database queries without validation.
+
+Example Input:
+' OR 1=1 -- → Always true, bypasses login
+
+🔓 SQL Statements Abused:
+SELECT, INSERT, DELETE, UPDATE, WHERE
+
+💥 SQLi Can Cause:
+Attack Type	What It Means
+Login Bypass	Access user accounts without credentials
+Data Theft	Steal usernames, passwords, credit cards
+Data Deletion	Drop or delete tables/records
+Data Manipulation	Change account balances, prices, etc.
+Server Access (RCE)	Gain remote control over the database or system
+Legal/Reputation Loss	Data breach → customer trust lost, legal trouble
+
+🛡️ How to Prevent:
+Input Validation / Sanitization
+
+Use Prepared Statements
+
+Use placeholders & bind variables
+
+Prevents SQL logic from being modified by user input
+
+Limit DB permissions
+
+Use ORM tools that safely build SQL queries
+
+🖱️ Clickjacking
+A UI deception attack where users are tricked into clicking something invisible or hidden.
+
+Typically done using transparent iframes overlaid on real buttons.
+
+You think you're clicking "Play" but actually clicking “Buy Now” behind it.
+
+💥 Clickjacking Can Cause:
+Attack Outcome	Description
+Unwanted actions	Like transferring money, changing settings
+Stealing clicks	Force likes/follows on social platforms
+Changing settings	Turn on webcam/microphone (in some browsers)
+Phishing	Show fake forms over trusted sites
+
+🛡️ How to Prevent:
+Use X-Frame-Options: DENY or SAMEORIGIN
+
+Use Content-Security-Policy: frame-ancestors 'none';
+
+Use frame-busting scripts (optional, older method)
+
+Require confirmation for critical actions
+
