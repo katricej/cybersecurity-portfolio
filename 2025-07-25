@@ -1,0 +1,110 @@
+
+Session hijacking
+Uses Cookies
+A type of cyberattack where an attacker takes over a valid session between a user and a web application. 
+Once hijacked, the attacker can act as if they are the user—accessing private data, performing actions
+Sniff traffic to obtain cookie over unsecure network
+EX: Public WI-FI hotspot
+
+
+Cross-Site Request Forgery (CSRF /XSRF)
+A web attack where a user is tricked into doing something they didn’t intend to do on a website where they are logged in.
+
+
+
+How to prevent CSRF:
+"Tokens Tailgating"
+CSRF tokens: Random, secret tokens added to forms (and checked on submission).
+***A CSRF token is a unique, random value added to every form or request. It’s like a secret password between your browser and the server.***
+
+SameSite cookies: Cookies that don’t get sent on cross-site requests.
+
+Double-submit cookies: A token stored in both a cookie and a form/header—must match.
+
+Checking Referer or Origin headers.
+
+
+
+Cross-Site Scripting (XSS) 
+A type of attack where a hacker injects malicious JavaScript into a website — so that it runs in other users’ browsers.
+Deals with script files
+Could Cause:
+What XSS Can Cause	            Description
+Cookie/session theft          	Hijack logged-in sessions
+Phishing attacks	              Fake login forms or messages
+Redirects	                      Send user to a malicious site
+Keylogging	                    Record keyboard input
+Site Defacement	                Change how the site looks
+Data theft	                    Read private content on the page
+Privilege abuse	                Perform actions as another user
+
+
+
+
+
+Directory Traversal Attack (also called Path Traversal)
+A type of security vulnerability where an attacker gains unauthorized access to files or directories outside the intended folder by manipulating file paths.
+❓ How can attackers manipulate file paths?
+They do it by adding ../ (dot-dot-slash) into the file name to “go back one folder".
+%2e= .(dot)
+%2f= (/)
+%2e %2e %2f= (../)
+
+TO AVOID:
+✅ 1. Block ../ in user input
+✅ 2. Use a fixed folder - Only let files load from a specific safe folder
+✅ 3. Use a whitelist - Only allow specific file names you know are safe.
+
+
+
+Server-Side Request Forgery (SSRF)
+Happens when an attacker tricks a server into making a request on its behalf — often to internal systems that the attacker shouldn't be able to access.
+EX: Capital One breach (2019) involved SSRF to access AWS instance metadata and steal data.
+Performs the forgery directly on the server side
+
+💥SSRF Can Cause:
+Attack Result	                                What It Means
+Access internal systems	                      Internal IPs like 127.0.0.1, localhost
+Steal metadata (on cloud servers)	            On AWS: http://169.254.169.254
+Bypass firewalls or IP filters	              Server can reach places the attacker can't
+Remote Code Execution (RCE)	                  If internal services are vulnerable
+Denial of Service (DoS)	                      Repeated requests crash internal services
+
+
+SQL Injection (SQLi)
+A web security vulnerability where an attacker tricks a website into running malicious SQL commands.
+It happens when user input is added directly into a database query without being properly checked or cleaned.
+
+SQL Statements
+Select, Insert, Delete, Update, Where
+
+EX: SQL Attack 
+4=4
+7==7
+1=1
+
+SQLi Can Cause:	                          What It Means
+Login bypass	                            Access accounts without credentials
+Data theft	                              Steal users' private info
+Data deletion	                            Destroy tables or records
+Data manipulation	                        Change data (e.g., prices, passwords)
+Server access (RCE)	                      Take control of the system
+Legal/reputation loss	                    Data breach → loss of trust, fines
+
+To Prevent:
+Sanitization- Input Validation
+Use Prepared Statements--->> use a Place holder, MYSQL Function, Bind Variables to statement
+
+
+Clickjacking
+A deceptive attack where a user is tricked into clicking on something they can't see — like a hidden button or link
+Usually by layering transparent content over a legit-looking page.
+
+Clickjacking Can Cause:
+Attack Outcome	                        Description
+Unwanted actions	                      Clicks that perform harmful tasks
+Stealing clicks	                        Force likes/follows on social media
+Changing settings	                      Activate webcam, mic, or permissions
+Phishing	                              Fake forms shown over real sites
+
+
