@@ -1,0 +1,146 @@
+Vulnerability Identification Methods
+
+Vulnerability
+A WEAKNESS of Flaw in the system software or network that attackers can exploit to gain unauthorized access
+
+Vulnerability Scanning/Testing
+Attack from the INSIDE of network looking for weaknesses
+Usually done after finding something 
+REACTIVE
+Minimally Invasive (EX: Port Scan/Nessus)
+
+
+
+Penetration  "Ethical Hacking"
+Simulated Cyberattack Testing OUTSIDE
+Mimicking real-world attacks
+REACTIVE
+
+
+Threat Hunting 
+Process of searching through system, networks, and data to detect and isolate threats
+PROACTIVE
+Investigation--->> Reactive
+Hunt------------>> Proactive
+
+Use: 
+IoC- Indicator of Comporomise
+IoA- Indicator of Attack
+Vulnerability Scan
+
+Use Tools:
+XDR
+SIEM
+UBA
+Infuse with AI
+
+
+Credentialing- Authenticating
+
+Non-Credential Scan
+Running scan without login rights to host OS or application
+
+
+Credential Scan
+Running scan/tests with login rights to host
+
+
+Fuzzing
+A way to test software by feeding it RANDOM or Broken inputs to see if it crashes or misbehaves
+
+Indicator of Attack (IoA)
+Sign that attack is CURRENTLY happen or About to Happen
+Before the damage is done
+
+Indicator of Compromise (IoC)
+"Breadcrumbs"
+Piece of evidence that shows a security breach may have happened
+EX: Files, Unknown User Account, Questionable Traffic, Location (GPS), Rough Devices
+
+
+
+Static Application Security Testing (SAST)
+Analyzes your source code, WITHOUT running program
+Just looking at lines of code to find vulnerabilities
+
+
+Dynamic Application Security Testing (DAST)
+Tests a running application by sending various malicious or unexpected inputs to see how it reacts
+
+Threat Data
+Static signature tools collect data
+
+Reputation Threat Intelligence
+Associates indicators of compromise (IoC)
+Reputation data
+
+Behavior Threat Intelligence
+Deals with behaviors and patterns
+
+
+
+
+
+Penetration Testing:
+
+Rules of Engagement (ROE)
+Whats Permitted and NOT Permitted 
+Use contracts to explain rules
+Agreement between 3rd party and company
+
+
+Black Box
+Testers Have NO INTERNAL KNOWLEDGE of the system 
+Simulate real-world attack from OUTSIDE (External Testing)
+
+White Box
+Testers have FULL KNOWLEDGE of the system (source code, credentials)
+Deep Security Audit/Code level analysis and FULL TRUST Scenarios
+
+Gray Box
+Testers have LIMITED knowledge, such as user credentials or network maps
+Simulates an attacker with some knowlege (Employer or Compromised user)
+Best for Internal Testing
+
+
+Red Team
+Simulates Real-world attacks
+OFFENSIVE Security
+EX: Social Engineering, Exploiting Misconfiguartion, Gaining Unauthorized access
+
+
+Blue Team
+Defend against attacks Monitor and Respond
+DEFENSIVE security- Goal to Detect, Prevent and Respond to attacks
+EX: Monitor logs, Incident Response, Patch Management, Threat Hunting
+
+Purple Team
+Bridge the gap betweeen Red and Blue teams
+Collaboration and Improvement
+Make sure Red Team findings Improve Blue Defenses
+Lessons are learned and security keeps improving
+
+
+
+
+National Instisture of Standards and Technology (NIST)
+Create standards and guidelines and best practices to help organizations secure their systems and data
+
+Open Worldwide Application Security Project (OWASP)
+Non-profit focused on improving software security
+Web based (Web and Application)
+
+
+Common Vulnerabilities and Exposures (CVE)
+Public list of known Cybersecurity vulnerablities
+
+MITRE
+Non-profit organization maintains CVE database 
+Created the ATT&K framework- used in Threat Hunting 
+
+
+
+
+
+
+
