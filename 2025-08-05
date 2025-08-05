@@ -1,0 +1,91 @@
+Based on the provided files, here is the transcribed text from your class notes:
+
+---
+
+**File: IMG_9099.jpeg**  
+**Date:** 8-5-2005  
+**Topic:** Diamond Model of Intrusion Analysis  
+**Key Parts:**  
+1. **Adversary**: The Attacker (Person or Group)  
+2. **Capability**: Tools / Malware they use (Phishing emails, fake pages)  
+3. **Infrastructure**: Where they launch the attack (IPs, Domains)  
+4. **Victim**: The Target (User, Company / System)  
+
+**Process Flow:**  
+- Adversary → Capability → Infrastructure → Victim  
+- *Example*: A cyber group creates a fake banking website to steal user credentials.  
+
+**Capability Example:**  
+- Fake login page stealing usernames/passwords.  
+- Sends stolen credentials to attacker’s server.  
+
+**Infrastructure Example:**  
+- Used to target a bank employee.  
+
+**Purpose:**  
+- Tracks attackers or predicts future actions.  
+
+---
+
+**File: IMG_9098.jpeg**  
+**Date:** 8-5-2025  
+**Topic:** Lockheed Martin Cyber Kill Chain Framework  
+**Stages:**  
+1. **Reconnaissance**: Gather intel on target.  
+2. **Weaponization**: Combine exploit code + payload.  
+3. **Delivery**: Transmit weaponized code (e.g., email, USB).  
+4. **Exploitation**: Code executes on target system ("Kaboom").  
+5. **Installation**: Install remote access tool (e.g., RAT).  
+6. **Command and Control (C2)**: Establish channel to attacker’s server.  
+7. **Actions on Objectives**: Steal data (Data Exfiltration).  
+
+---
+
+**File: IMG_9094.jpeg**  
+**Date:** 8-5-2025  
+**Topics:**  
+### DNS Hierarchy:  
+- Local DNS Server → Root DNS Server → TLD Server (e.g., .com, .org) → Domain Server → Returns IP → Browser loads site.  
+
+### S/MIME (Secure Email):  
+- **Encryption**: Uses recipient’s public key.  
+- **Signing**: Uses sender’s private key.  
+- **Decryption**: Recipient uses private key.  
+- **Verification**: Uses sender’s public key.  
+
+### DNS Threats:  
+- **Spoofing/Hijacking**: Redirects DNS queries maliciously.  
+
+### DNSSEC (DNS Security Extensions):  
+- Validates DNS responses using public/private keys.  
+- **Key Records**:  
+  - **ZSK (Zone Signing Key)**: Signs DNS records.  
+  - **KSK (Key Signing Key)**: Signs the ZSK.  
+
+---
+
+**File: IMG_9095.jpeg**  
+**Date:** 8-5-2025  
+**Topics:**  
+### DNSSEC Delegation Signer (DS) Record:  
+- Links child zone (e.g., `yourdomain.com`) to parent zone (`.com`).  
+- Creates a Chain of Trust (CoT).  
+- Stores a fingerprint of the domain’s DNSSEC public key at the registrar.  
+
+### Security Development Lifecycle (SDLC) Best Practices:  
+1. Planning/Requirements  
+2. Design  
+3. Development  
+4. Testing  
+5. Deployment  
+6. Maintenance  
+
+### OWASP (Open Web Application Security Project):  
+- Guides secure app development by identifying/fixing vulnerabilities.  
+
+#Input Validation:  
+- **Example**: Validate user age is 0–120.  
+- **Allow List (Whitelist)**: Permits only specific characters (*most secure*).  
+- **Deny List (Blacklist)**: Blocks specific characters.  
+- **Server-side allow list is most secure**.  
+
