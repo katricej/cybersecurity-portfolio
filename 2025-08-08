@@ -1,0 +1,115 @@
+Here's the transcribed and corrected version of your handwritten notes, organized by image file with clear formatting:
+
+---
+
+### **IMG_9238.jpeg**  
+**Date:** 8-8-2025  
+**Topic:** Security Information and Event Management (SIEM)  
+- **Purpose:**  
+  - Collect logs (data from firewalls, servers, computers).  
+  - Detect threats (suspicious activity, hacking attempts).  
+  - Alert the team.  
+  - Investigate problems.  
+- **Agent-based:** Install software (agent) on each host.  
+- **SIEM = SIM + SEM**  
+  - **SIM (Security Information Management):**  
+    - Stores and analyzes historical data (logs).  
+    - Helps with compliance/audits and forensic investigations.  
+    - Example: Looking back at login records to investigate a breach.  
+  - **SEM (Security Event Management):**  
+    - Real-time monitoring and alerting.  
+    - Detects and responds to threats as they happen.  
+    - Example: Alerting when someone accesses a system from a blacklisted IP.  
+- **Agentless / Collector:**  
+  - No agent software required.  
+  - (Report-less)  
+  - Beats in ELK (Elasticsearch, Logstash, Kibana).  
+- **Popular SIEM Tools:**  
+  - Splunk  
+  - IBM QRadar  
+  - Microsoft Sentinel  
+- **Input to SIEM:**  
+  - Logs  
+  - NDR (Network Detection and Response)  
+  - Threat Intel  
+  - EDR (Endpoint Detection and Response)  
+  - Vulnerabilities  
+- **Limitations:**  
+  - EDR, other SIEMs, or logs = SIEM Gap (incomplete coverage).  
+- **Top Developments:**  
+  - **Federated Search:**  
+    - Searching across multiple data sources/systems simultaneously from one place.  
+
+---
+
+### **IMG_9241.jpeg**  
+**Date:** 8-8-2025  
+**Topic:** Malware Classification  
+- **Virus:**  
+  - Modifies a host file to spread (documents/programs).  
+  - Spreads when infected files are opened.  
+  - Damages files or slows systems.  
+- **Worm:**  
+  - Self-spreading through networks (no user action needed).  
+  - Used to slow networks or install more malware.  
+- **RAT (Remote Access Trojan):**  
+  - Disguised as safe files/software.  
+  - Gives hackers remote access to systems.  
+- **Spyware:**  
+  - Monitors user activity and sends data to attackers.  
+- **Adware:**  
+  - Displays excessive ads (pop-ups, banners, browser redirects).  
+- **Keylogger:**  
+  - Records keystrokes to steal credentials.  
+- **Ransomware:**  
+  - Locks files/systems and demands payment.  
+- **Rootkit:**  
+  - Hides deep in systems to maintain hidden access.  
+- **Logic Bomb:**  
+  - Dormant malicious code that activates when conditions are met.  
+
+---
+
+### **IMG_9239.jpeg**  
+**Topic:** SOAR (Security Orchestration, Automation, and Response)  
+- **Purpose:** Automate threat response (faster/efficient).  
+- **Components:**  
+  - **S**ecurity Orchestration: Connects tools/systems.  
+  - **A**utomation: Executes tasks automatically (e.g., dynamic playbooks).  
+  - **R**esponse: Takes action against threats.  
+- **Tools:** Palo Alto, IBM Resilient, Splunk Phantom.  
+- **XDR + SOAR = Complete Security Setup**  
+- **Threat Hunting (Proactive):**  
+  - Searches for hidden threats (e.g., in dark web).  
+- **Key Metrics:**  
+  - MTTR (Mean Time to Respond) = 70% reduction.  
+- **Orchestration:**  
+  - Connects tasks/tools into a workflow (e.g., Detect → Block → Alert → Report).  
+- **Automation:**  
+  - Performs tasks without human intervention (e.g., block an IP automatically).  
+
+---
+
+### **IMG_9243.jpeg**  
+**Date:** 8-8-2025  
+**Topic:** Passwords & Network Threats  
+- **Brute Force Attack:**  
+  - Hackers try every password combination.  
+  - **Defense:** Strong long passwords + MFA (Multi-Factor Authentication).  
+- **Password Spraying (Online):**  
+  - Tests a few common passwords (e.g., "Password123") across many accounts.  
+  - Avoids account lockouts by targeting multiple users.  
+- **RFID (Radio Frequency Identification):**  
+  - Uses radio waves to track objects (tags/readers).  
+  - Examples: Access cards, badges, key fobs.  
+- **DoS (Denial of Service):**  
+  - Floods a target with excessive traffic (slows/crashes it).  
+  - Originates from one computer.  
+- **DDoS (Distributed Denial of Service):**  
+  - Floods targets using many compromised devices.  
+- **Evil Twin:**  
+  - Fake Wi-Fi network mimicking legitimate ones to steal data.  
+
+--- 
+
+Let me know if you need further refinements or additional formatting!
